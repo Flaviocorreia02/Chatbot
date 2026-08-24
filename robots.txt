@@ -1,0 +1,22 @@
+# Câmara Municipal do Maio — robots.txt
+# Substituir [[SITE_DOMAIN]] pelo domínio final antes de publicar.
+
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /*?lang=en$
+
+# O modelo de artigo só faz sentido com o parâmetro ?id=
+Disallow: /noticia.html$
+
+# Motores generativos: a informação de serviço deste sítio é pública e citável.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://[[SITE_DOMAIN]]/sitemap.xml

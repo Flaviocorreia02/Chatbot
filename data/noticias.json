@@ -1,0 +1,325 @@
+[
+  {
+    "id": "obras-conduta-vila-2026",
+    "data": "2026-08-18",
+    "categoria": "obras",
+    "local": "Vila do Maio",
+    "autor": "Gabinete de Comunicação",
+    "imagem": "assets/img/noticia-01",
+    "pt": {
+      "titulo": "Substituição da conduta principal da Vila arranca em Setembro",
+      "resumo": "A empreitada substitui 3,2 km de conduta entre o reservatório alto e o centro da Vila do Maio. Haverá cortes de água programados, avisados com 48 horas de antecedência.",
+      "categoria": "Obras",
+      "alt": "Vista da costa e das salinas junto à Vila do Maio",
+      "corpo": [
+        { "tipo": "p", "texto": "A Câmara Municipal do Maio adjudicou a empreitada de substituição da conduta principal de abastecimento da Vila do Maio. Os trabalhos começam na primeira semana de Setembro e têm um prazo de execução de quatro meses." },
+        { "tipo": "p", "texto": "A conduta actual, com mais de trinta anos, regista perdas sucessivas e obriga a reparações mensais. A nova tubagem, em polietileno de alta densidade, reduz as perdas e permite aumentar a pressão nos bairros altos, hoje abastecidos apenas de madrugada." },
+        { "tipo": "h2", "texto": "Cortes programados" },
+        { "tipo": "p", "texto": "Durante a obra haverá interrupções de abastecimento por troços. Cada corte é anunciado com 48 horas de antecedência, por aviso afixado nos Paços do Concelho, por mensagem nas redes municipais e por comunicação aos comerciantes da zona afectada." },
+        { "tipo": "lista", "itens": [
+          "Troço 1 — Reservatório alto ao cruzamento da Escola: 2 a 20 de Setembro.",
+          "Troço 2 — Cruzamento da Escola à Praça do Município: 21 de Setembro a 15 de Outubro.",
+          "Troço 3 — Praça do Município à zona do porto: 16 de Outubro a 30 de Novembro."
+        ] },
+        { "tipo": "citacao", "texto": "Quem depende de depósito domiciliário deve enchê-lo na véspera de cada corte anunciado." },
+        { "tipo": "h2", "texto": "Apoio durante a obra" },
+        { "tipo": "p", "texto": "Os Serviços Municipais de Água asseguram abastecimento por autotanque a instituições de saúde, escolas e agregados sinalizados pela acção social. Os pedidos são feitos no Balcão do Munícipe." }
+      ]
+    },
+    "en": {
+      "titulo": "Replacement of the main water pipe in Vila starts in September",
+      "resumo": "The works replace 3.2 km of pipe between the upper reservoir and the centre of Vila do Maio. Scheduled water cuts will be announced 48 hours in advance.",
+      "categoria": "Works",
+      "alt": "View of the coast and salt pans near Vila do Maio",
+      "corpo": [
+        { "tipo": "p", "texto": "Maio Municipality Council has awarded the contract to replace the main water supply pipe serving Vila do Maio. Works begin in the first week of September and are scheduled to take four months." },
+        { "tipo": "p", "texto": "The current pipe, over thirty years old, leaks repeatedly and requires monthly repairs. The new high-density polyethylene pipe cuts losses and raises pressure in the upper neighbourhoods, currently supplied only at dawn." },
+        { "tipo": "h2", "texto": "Scheduled cuts" },
+        { "tipo": "p", "texto": "Supply will be interrupted section by section. Each cut is announced 48 hours in advance, by notice at the Town Hall, on the council's social channels and directly to businesses in the affected area." },
+        { "tipo": "lista", "itens": [
+          "Section 1 — Upper reservoir to the School junction: 2 to 20 September.",
+          "Section 2 — School junction to Praça do Município: 21 September to 15 October.",
+          "Section 3 — Praça do Município to the port area: 16 October to 30 November."
+        ] },
+        { "tipo": "citacao", "texto": "Households with a storage tank should fill it the day before each announced cut." },
+        { "tipo": "h2", "texto": "Support during the works" },
+        { "tipo": "p", "texto": "Municipal Water Services will supply health centres, schools and households flagged by social services by tanker. Requests are made at the Citizen Desk." }
+      ]
+    }
+  },
+  {
+    "id": "assembleia-setembro-2026",
+    "data": "2026-08-14",
+    "categoria": "municipio",
+    "local": "Vila do Maio",
+    "autor": "Gabinete de Comunicação",
+    "imagem": "assets/img/noticia-02",
+    "evento": { "data": "2026-09-12", "hora": "09h00", "local": "Salão Nobre dos Paços do Concelho" },
+    "pt": {
+      "titulo": "Assembleia Municipal reúne a 12 de Setembro",
+      "resumo": "A sessão ordinária aprecia a execução orçamental do primeiro semestre e o regulamento de resíduos urbanos. A sessão é pública.",
+      "categoria": "Município",
+      "evento_titulo": "Sessão ordinária da Assembleia Municipal",
+      "alt": "Fachada dos Paços do Concelho do Maio",
+      "corpo": [
+        { "tipo": "p", "texto": "A Assembleia Municipal do Maio reúne em sessão ordinária no dia 12 de Setembro, às 9h00, no Salão Nobre dos Paços do Concelho." },
+        { "tipo": "h2", "texto": "Ordem de trabalhos" },
+        { "tipo": "lista", "itens": [
+          "Apreciação da execução orçamental do primeiro semestre.",
+          "Discussão e votação do regulamento de resíduos urbanos.",
+          "Informação escrita do Presidente da Câmara sobre a actividade municipal.",
+          "Período de intervenção do público."
+        ] },
+        { "tipo": "p", "texto": "A sessão é pública. Os munícipes que pretendam intervir devem inscrever-se junto da mesa até quinze minutos antes do início dos trabalhos." }
+      ]
+    },
+    "en": {
+      "titulo": "Municipal Assembly meets on 12 September",
+      "resumo": "The ordinary session reviews first-half budget execution and the urban waste by-law. The session is open to the public.",
+      "categoria": "Municipality",
+      "evento_titulo": "Ordinary session of the Municipal Assembly",
+      "alt": "Facade of the Maio Town Hall",
+      "corpo": [
+        { "tipo": "p", "texto": "The Municipal Assembly of Maio meets in ordinary session on 12 September at 9:00, in the Hall of the Town Hall." },
+        { "tipo": "h2", "texto": "Agenda" },
+        { "tipo": "lista", "itens": [
+          "Review of first-half budget execution.",
+          "Debate and vote on the urban waste by-law.",
+          "Written report by the Mayor on municipal activity.",
+          "Public participation period."
+        ] },
+        { "tipo": "p", "texto": "The session is public. Residents wishing to speak should register with the chair up to fifteen minutes before the start." }
+      ]
+    }
+  },
+  {
+    "id": "tartarugas-epoca-2026",
+    "data": "2026-08-06",
+    "categoria": "ambiente",
+    "local": "Praias do concelho",
+    "autor": "Divisão de Ambiente",
+    "imagem": "assets/img/noticia-03",
+    "pt": {
+      "titulo": "Época de desova: praias com acesso condicionado à noite",
+      "resumo": "Entre Junho e Outubro, o acesso nocturno a quatro praias de desova fica condicionado. A observação de ninhos só é permitida com guias credenciados.",
+      "categoria": "Ambiente",
+      "alt": "Praia de areia branca ao entardecer, com marcas de passagem de tartaruga",
+      "corpo": [
+        { "tipo": "p", "texto": "A Câmara Municipal do Maio, em articulação com as entidades de conservação, condiciona o acesso nocturno a quatro praias de desova da tartaruga-comum entre Junho e Outubro." },
+        { "tipo": "h2", "texto": "O que muda" },
+        { "tipo": "lista", "itens": [
+          "Entre as 20h00 e as 6h00, o acesso é permitido apenas com guia credenciado.",
+          "É proibido o uso de luz branca, flash e fogueiras nas praias assinaladas.",
+          "A circulação de viaturas na areia é proibida durante todo o ano."
+        ] },
+        { "tipo": "p", "texto": "As regras protegem as fêmeas em desova e as crias, que se orientam pela luz do horizonte. A fiscalização é feita pela Divisão de Ambiente com apoio das equipas de conservação." },
+        { "tipo": "citacao", "texto": "Uma lanterna branca apontada à areia pode fazer uma ninhada inteira caminhar na direcção errada." }
+      ]
+    },
+    "en": {
+      "titulo": "Nesting season: restricted night access to beaches",
+      "resumo": "From June to October, night access to four nesting beaches is restricted. Watching nests is allowed only with accredited guides.",
+      "categoria": "Environment",
+      "alt": "White sand beach at dusk with turtle tracks",
+      "corpo": [
+        { "tipo": "p", "texto": "Maio Municipality Council, together with conservation bodies, restricts night access to four loggerhead nesting beaches between June and October." },
+        { "tipo": "h2", "texto": "What changes" },
+        { "tipo": "lista", "itens": [
+          "Between 20:00 and 06:00, access is allowed only with an accredited guide.",
+          "White light, flash photography and fires are banned on the marked beaches.",
+          "Driving on the sand is banned all year round."
+        ] },
+        { "tipo": "p", "texto": "The rules protect nesting females and hatchlings, which navigate by the light of the horizon. Enforcement is carried out by the Environment Division with conservation teams." },
+        { "tipo": "citacao", "texto": "A white torch pointed at the sand can send an entire clutch walking the wrong way." }
+      ]
+    }
+  },
+  {
+    "id": "feira-morro-setembro",
+    "data": "2026-08-02",
+    "categoria": "cultura",
+    "local": "Morro",
+    "autor": "Divisão Sociocultural",
+    "imagem": "assets/img/noticia-04",
+    "evento": { "data": "2026-09-20", "hora": "07h00", "local": "Largo do Morro" },
+    "pt": {
+      "titulo": "Feira do Morro com espaço reservado a produtores do concelho",
+      "resumo": "A feira mensal do Morro passa a reservar metade dos lugares a produtores locais de queijo, hortícolas e pescado. As inscrições abrem no Balcão do Munícipe.",
+      "categoria": "Cultura",
+      "evento_titulo": "Feira municipal do Morro",
+      "alt": "Bancas de feira ao ar livre numa praça de terra batida",
+      "corpo": [
+        { "tipo": "p", "texto": "A feira mensal do Morro passa a reservar metade dos lugares de venda a produtores do concelho, numa medida aprovada em reunião de Câmara." },
+        { "tipo": "p", "texto": "A medida responde a um pedido antigo dos criadores de caprinos e dos horticultores, que competiam por espaço com revendedores vindos de fora da ilha." },
+        { "tipo": "h2", "texto": "Como participar" },
+        { "tipo": "lista", "itens": [
+          "Inscrição no Balcão do Munícipe até cinco dias antes da feira.",
+          "Comprovativo de residência no concelho e de actividade produtiva.",
+          "Cartão de vendedor municipal válido."
+        ] }
+      ]
+    },
+    "en": {
+      "titulo": "Morro fair reserves half its stalls for local producers",
+      "resumo": "The monthly Morro fair will reserve half of its stalls for local producers of cheese, vegetables and fish. Registration is at the Citizen Desk.",
+      "categoria": "Culture",
+      "evento_titulo": "Morro municipal fair",
+      "alt": "Open-air market stalls in a dirt square",
+      "corpo": [
+        { "tipo": "p", "texto": "The monthly Morro fair will reserve half of its selling spaces for producers from the municipality, under a decision approved in a council meeting." },
+        { "tipo": "p", "texto": "The measure answers a long-standing request from goat farmers and vegetable growers, who competed for space with resellers from outside the island." },
+        { "tipo": "h2", "texto": "How to take part" },
+        { "tipo": "lista", "itens": [
+          "Register at the Citizen Desk up to five days before the fair.",
+          "Proof of residence in the municipality and of productive activity.",
+          "Valid municipal seller's card."
+        ] }
+      ]
+    }
+  },
+  {
+    "id": "recolha-residuos-alargada",
+    "data": "2026-07-24",
+    "categoria": "ambiente",
+    "local": "Todo o concelho",
+    "autor": "Divisão de Ambiente",
+    "imagem": "assets/img/noticia-05",
+    "pt": {
+      "titulo": "Recolha de resíduos alargada a Pilão Cão e Santo António",
+      "resumo": "As duas localidades passam a ter recolha semanal às quintas-feiras, com quatro novos contentores instalados em cada núcleo.",
+      "categoria": "Ambiente",
+      "alt": "Contentor de resíduos junto a um muro de pedra seca",
+      "corpo": [
+        { "tipo": "p", "texto": "A recolha de resíduos urbanos passa a abranger Pilão Cão e Santo António, com passagem semanal às quintas-feiras entre as 15h00 e as 19h00." },
+        { "tipo": "p", "texto": "Foram instalados quatro contentores em cada localidade, em pontos acordados com as comissões de moradores. A Câmara pede que os sacos sejam fechados e depositados dentro dos contentores." },
+        { "tipo": "h2", "texto": "O que não é recolhido" },
+        { "tipo": "p", "texto": "Entulho de obra, mobiliário, electrodomésticos e resíduos de criação animal não são recolhidos com o lixo doméstico. A remoção é marcada no Balcão do Munícipe." }
+      ]
+    },
+    "en": {
+      "titulo": "Waste collection extended to Pilão Cão and Santo António",
+      "resumo": "Both localities now have weekly collection on Thursdays, with four new containers installed in each settlement.",
+      "categoria": "Environment",
+      "alt": "Waste container beside a dry stone wall",
+      "corpo": [
+        { "tipo": "p", "texto": "Urban waste collection now covers Pilão Cão and Santo António, with a weekly round on Thursdays between 15:00 and 19:00." },
+        { "tipo": "p", "texto": "Four containers were installed in each locality, at points agreed with residents' committees. The council asks that bags be closed and placed inside the containers." },
+        { "tipo": "h2", "texto": "What is not collected" },
+        { "tipo": "p", "texto": "Construction rubble, furniture, appliances and livestock waste are not collected with household waste. Removal is booked at the Citizen Desk." }
+      ]
+    }
+  },
+  {
+    "id": "orcamento-participativo-2026",
+    "data": "2026-07-10",
+    "categoria": "municipio",
+    "local": "Todo o concelho",
+    "autor": "Gabinete de Comunicação",
+    "imagem": "assets/img/noticia-06",
+    "evento": { "data": "2026-10-04", "hora": "16h00", "local": "Escola Secundária do Maio" },
+    "pt": {
+      "titulo": "Orçamento participativo: sessões públicas nas doze localidades",
+      "resumo": "As propostas dos munícipes são recolhidas em sessões públicas entre Setembro e Outubro. A votação final decorre em Novembro.",
+      "categoria": "Município",
+      "evento_titulo": "Sessão pública do orçamento participativo",
+      "alt": "Sala com cadeiras dispostas para uma sessão pública",
+      "corpo": [
+        { "tipo": "p", "texto": "A Câmara Municipal do Maio abre o processo de orçamento participativo com sessões públicas nas doze localidades do concelho, entre Setembro e Outubro." },
+        { "tipo": "h2", "texto": "Como funciona" },
+        { "tipo": "lista", "itens": [
+          "Cada munícipe pode apresentar uma proposta por sessão.",
+          "As propostas são avaliadas tecnicamente pelos serviços.",
+          "As propostas viáveis vão a votação em Novembro.",
+          "As vencedoras entram no plano de actividades do ano seguinte."
+        ] },
+        { "tipo": "p", "texto": "O calendário completo das sessões é afixado nos Paços do Concelho e publicado nesta página." }
+      ]
+    },
+    "en": {
+      "titulo": "Participatory budget: public sessions in all twelve localities",
+      "resumo": "Residents' proposals are gathered at public sessions between September and October. The final vote takes place in November.",
+      "categoria": "Municipality",
+      "evento_titulo": "Participatory budget public session",
+      "alt": "Room with chairs set out for a public meeting",
+      "corpo": [
+        { "tipo": "p", "texto": "Maio Municipality Council opens its participatory budget process with public sessions in the municipality's twelve localities, between September and October." },
+        { "tipo": "h2", "texto": "How it works" },
+        { "tipo": "lista", "itens": [
+          "Each resident may submit one proposal per session.",
+          "Proposals are assessed technically by council services.",
+          "Viable proposals go to a vote in November.",
+          "Winning proposals enter the following year's activity plan."
+        ] },
+        { "tipo": "p", "texto": "The full session calendar is posted at the Town Hall and published on this page." }
+      ]
+    }
+  },
+  {
+    "id": "estrada-calheta-reabilitacao",
+    "data": "2026-06-28",
+    "categoria": "obras",
+    "local": "Calheta",
+    "autor": "Divisão de Urbanismo e Obras",
+    "imagem": "assets/img/noticia-07",
+    "pt": {
+      "titulo": "Estrada de acesso à Calheta reabilitada em 5 km",
+      "resumo": "A empreitada repôs o pavimento e a drenagem em cinco quilómetros de estrada. O troço estava degradado desde as chuvas do ano passado.",
+      "categoria": "Obras",
+      "alt": "Estrada de asfalto novo a atravessar terreno seco",
+      "corpo": [
+        { "tipo": "p", "texto": "Ficou concluída a reabilitação de cinco quilómetros da estrada de acesso à Calheta, incluindo reposição do pavimento, valetas de drenagem e sinalização horizontal." },
+        { "tipo": "p", "texto": "O troço estava degradado desde as chuvas do ano passado, que arrastaram material da encosta e abriram valas na faixa de rodagem. A intervenção reduz o tempo de percurso entre a Vila e a Calheta e melhora o acesso do transporte escolar." }
+      ]
+    },
+    "en": {
+      "titulo": "Five kilometres of the Calheta access road rehabilitated",
+      "resumo": "The contract restored surfacing and drainage along five kilometres of road. The stretch had been damaged since last year's rains.",
+      "categoria": "Works",
+      "alt": "Newly surfaced road crossing dry terrain",
+      "corpo": [
+        { "tipo": "p", "texto": "Rehabilitation of five kilometres of the Calheta access road is complete, including resurfacing, drainage ditches and road markings." },
+        { "tipo": "p", "texto": "The stretch had been damaged since last year's rains, which washed material off the slope and cut gullies into the carriageway. The work shortens journey times between Vila and Calheta and improves school transport access." }
+      ]
+    }
+  },
+  {
+    "id": "festa-municipal-santo-antonio",
+    "data": "2026-06-12",
+    "categoria": "cultura",
+    "local": "Santo António",
+    "autor": "Divisão Sociocultural",
+    "imagem": "assets/img/noticia-08",
+    "pt": {
+      "titulo": "Programa das festas do município: três dias em Santo António",
+      "resumo": "Missa campal, torneio de futebol de praia, batuque e noite de música ao vivo compõem o programa das festas municipais.",
+      "categoria": "Cultura",
+      "alt": "Palco montado ao ar livre numa praça junto ao mar",
+      "corpo": [
+        { "tipo": "p", "texto": "As festas do município realizam-se em Santo António, com três dias de programa organizado pela Divisão Sociocultural em conjunto com as associações locais." },
+        { "tipo": "h2", "texto": "Programa" },
+        { "tipo": "lista", "itens": [
+          "Sexta-feira: abertura, batuque e finaçon.",
+          "Sábado: torneio de futebol de praia e feira de artesanato.",
+          "Domingo: missa campal, procissão e noite de música ao vivo."
+        ] },
+        { "tipo": "p", "texto": "O transporte colectivo entre a Vila do Maio e Santo António é reforçado nos três dias, com última partida à 1h00." }
+      ]
+    },
+    "en": {
+      "titulo": "Municipal festival programme: three days in Santo António",
+      "resumo": "Open-air mass, a beach football tournament, batuque and a live music night make up the municipal festival programme.",
+      "categoria": "Culture",
+      "alt": "Outdoor stage set up in a square by the sea",
+      "corpo": [
+        { "tipo": "p", "texto": "The municipal festival takes place in Santo António, with a three-day programme organised by the Sociocultural Division together with local associations." },
+        { "tipo": "h2", "texto": "Programme" },
+        { "tipo": "lista", "itens": [
+          "Friday: opening, batuque and finaçon.",
+          "Saturday: beach football tournament and craft fair.",
+          "Sunday: open-air mass, procession and live music night."
+        ] },
+        { "tipo": "p", "texto": "Public transport between Vila do Maio and Santo António is reinforced on all three days, with the last departure at 01:00." }
+      ]
+    }
+  }
+]

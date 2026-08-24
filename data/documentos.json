@@ -1,0 +1,308 @@
+[
+  {
+    "id": "doc-001",
+    "tipo": "orcamento",
+    "ano": 2026,
+    "data": "2026-01-15",
+    "formato": "PDF",
+    "tamanho": "1,8 MB",
+    "ficheiro": "documentos/orcamento-2026-001.pdf",
+    "pt": {
+      "titulo": "Orçamento municipal e Grandes Opções do Plano 2026",
+      "tipo": "Orçamento"
+    },
+    "en": {
+      "titulo": "Municipal budget and main plan options 2026",
+      "tipo": "Budget"
+    }
+  },
+  {
+    "id": "doc-002",
+    "tipo": "plano",
+    "ano": 2026,
+    "data": "2026-01-15",
+    "formato": "PDF",
+    "tamanho": "1,2 MB",
+    "ficheiro": "documentos/plano-2026-002.pdf",
+    "pt": {
+      "titulo": "Plano de actividades e investimentos 2026",
+      "tipo": "Plano de actividades"
+    },
+    "en": {
+      "titulo": "Activity and investment plan 2026",
+      "tipo": "Activity plan"
+    }
+  },
+  {
+    "id": "doc-003",
+    "tipo": "acta",
+    "ano": 2026,
+    "data": "2026-07-30",
+    "formato": "PDF",
+    "tamanho": "420 KB",
+    "ficheiro": "documentos/acta-2026-003.pdf",
+    "pt": {
+      "titulo": "Acta da reunião ordinária de Câmara de 24 de Julho de 2026",
+      "tipo": "Actas e deliberações"
+    },
+    "en": {
+      "titulo": "Minutes of the ordinary council meeting of 24 July 2026",
+      "tipo": "Minutes and decisions"
+    }
+  },
+  {
+    "id": "doc-004",
+    "tipo": "acta",
+    "ano": 2026,
+    "data": "2026-06-18",
+    "formato": "PDF",
+    "tamanho": "512 KB",
+    "ficheiro": "documentos/acta-2026-004.pdf",
+    "pt": {
+      "titulo": "Acta da sessão da Assembleia Municipal de 6 de Junho de 2026",
+      "tipo": "Actas e deliberações"
+    },
+    "en": {
+      "titulo": "Minutes of the Municipal Assembly session of 6 June 2026",
+      "tipo": "Minutes and decisions"
+    }
+  },
+  {
+    "id": "doc-005",
+    "tipo": "contratacao",
+    "ano": 2026,
+    "data": "2026-05-20",
+    "formato": "PDF",
+    "tamanho": "2,4 MB",
+    "ficheiro": "documentos/contratacao-2026-005.pdf",
+    "pt": {
+      "titulo": "Concurso público: reabilitação da conduta principal da Vila do Maio",
+      "tipo": "Contratação pública"
+    },
+    "en": {
+      "titulo": "Public tender: rehabilitation of the main water pipe in Vila do Maio",
+      "tipo": "Public procurement"
+    }
+  },
+  {
+    "id": "doc-006",
+    "tipo": "contratacao",
+    "ano": 2026,
+    "data": "2026-03-11",
+    "formato": "PDF",
+    "tamanho": "680 KB",
+    "ficheiro": "documentos/contratacao-2026-006.pdf",
+    "pt": {
+      "titulo": "Ajuste directo: aquisição de contentores de resíduos urbanos",
+      "tipo": "Contratação pública"
+    },
+    "en": {
+      "titulo": "Direct award: purchase of urban waste containers",
+      "tipo": "Public procurement"
+    }
+  },
+  {
+    "id": "doc-007",
+    "tipo": "regulamento",
+    "ano": 2026,
+    "data": "2026-02-27",
+    "formato": "PDF",
+    "tamanho": "900 KB",
+    "ficheiro": "documentos/regulamento-2026-007.pdf",
+    "pt": {
+      "titulo": "Regulamento de resíduos sólidos urbanos do concelho do Maio",
+      "tipo": "Regulamentos e posturas"
+    },
+    "en": {
+      "titulo": "Urban solid waste regulation of the municipality of Maio",
+      "tipo": "By-laws and regulations"
+    }
+  },
+  {
+    "id": "doc-008",
+    "tipo": "contas",
+    "ano": 2025,
+    "data": "2025-04-30",
+    "formato": "PDF",
+    "tamanho": "3,1 MB",
+    "ficheiro": "documentos/contas-2025-008.pdf",
+    "pt": {
+      "titulo": "Contas de gerência do exercício de 2024",
+      "tipo": "Contas de gerência"
+    },
+    "en": {
+      "titulo": "Annual accounts for the 2024 financial year",
+      "tipo": "Annual accounts"
+    }
+  },
+  {
+    "id": "doc-009",
+    "tipo": "orcamento",
+    "ano": 2025,
+    "data": "2025-01-16",
+    "formato": "PDF",
+    "tamanho": "1,7 MB",
+    "ficheiro": "documentos/orcamento-2025-009.pdf",
+    "pt": {
+      "titulo": "Orçamento municipal e Grandes Opções do Plano 2025",
+      "tipo": "Orçamento"
+    },
+    "en": {
+      "titulo": "Municipal budget and main plan options 2025",
+      "tipo": "Budget"
+    }
+  },
+  {
+    "id": "doc-010",
+    "tipo": "plano",
+    "ano": 2025,
+    "data": "2025-01-16",
+    "formato": "PDF",
+    "tamanho": "1,1 MB",
+    "ficheiro": "documentos/plano-2025-010.pdf",
+    "pt": {
+      "titulo": "Plano de actividades e investimentos 2025",
+      "tipo": "Plano de actividades"
+    },
+    "en": {
+      "titulo": "Activity and investment plan 2025",
+      "tipo": "Activity plan"
+    }
+  },
+  {
+    "id": "doc-011",
+    "tipo": "regulamento",
+    "ano": 2025,
+    "data": "2025-09-08",
+    "formato": "PDF",
+    "tamanho": "1,4 MB",
+    "ficheiro": "documentos/regulamento-2025-011.pdf",
+    "pt": {
+      "titulo": "Regulamento de taxas e licenças municipais",
+      "tipo": "Regulamentos e posturas"
+    },
+    "en": {
+      "titulo": "Municipal fees and licences regulation",
+      "tipo": "By-laws and regulations"
+    }
+  },
+  {
+    "id": "doc-012",
+    "tipo": "acta",
+    "ano": 2025,
+    "data": "2025-11-14",
+    "formato": "PDF",
+    "tamanho": "486 KB",
+    "ficheiro": "documentos/acta-2025-012.pdf",
+    "pt": {
+      "titulo": "Acta da sessão da Assembleia Municipal de 30 de Outubro de 2025",
+      "tipo": "Actas e deliberações"
+    },
+    "en": {
+      "titulo": "Minutes of the Municipal Assembly session of 30 October 2025",
+      "tipo": "Minutes and decisions"
+    }
+  },
+  {
+    "id": "doc-013",
+    "tipo": "contratacao",
+    "ano": 2025,
+    "data": "2025-08-22",
+    "formato": "PDF",
+    "tamanho": "2,9 MB",
+    "ficheiro": "documentos/contratacao-2025-013.pdf",
+    "pt": {
+      "titulo": "Concurso público: reabilitação da estrada de acesso à Calheta",
+      "tipo": "Contratação pública"
+    },
+    "en": {
+      "titulo": "Public tender: rehabilitation of the Calheta access road",
+      "tipo": "Public procurement"
+    }
+  },
+  {
+    "id": "doc-014",
+    "tipo": "contas",
+    "ano": 2024,
+    "data": "2024-04-29",
+    "formato": "PDF",
+    "tamanho": "2,8 MB",
+    "ficheiro": "documentos/contas-2024-014.pdf",
+    "pt": {
+      "titulo": "Contas de gerência do exercício de 2023",
+      "tipo": "Contas de gerência"
+    },
+    "en": {
+      "titulo": "Annual accounts for the 2023 financial year",
+      "tipo": "Annual accounts"
+    }
+  },
+  {
+    "id": "doc-015",
+    "tipo": "orcamento",
+    "ano": 2024,
+    "data": "2024-01-18",
+    "formato": "PDF",
+    "tamanho": "1,6 MB",
+    "ficheiro": "documentos/orcamento-2024-015.pdf",
+    "pt": {
+      "titulo": "Orçamento municipal e Grandes Opções do Plano 2024",
+      "tipo": "Orçamento"
+    },
+    "en": {
+      "titulo": "Municipal budget and main plan options 2024",
+      "tipo": "Budget"
+    }
+  },
+  {
+    "id": "doc-016",
+    "tipo": "regulamento",
+    "ano": 2024,
+    "data": "2024-06-05",
+    "formato": "PDF",
+    "tamanho": "740 KB",
+    "ficheiro": "documentos/regulamento-2024-016.pdf",
+    "pt": {
+      "titulo": "Postura municipal sobre ocupação de via pública e esplanadas",
+      "tipo": "Regulamentos e posturas"
+    },
+    "en": {
+      "titulo": "Municipal by-law on public space occupation and terraces",
+      "tipo": "By-laws and regulations"
+    }
+  },
+  {
+    "id": "doc-017",
+    "tipo": "acta",
+    "ano": 2024,
+    "data": "2024-12-19",
+    "formato": "PDF",
+    "tamanho": "398 KB",
+    "ficheiro": "documentos/acta-2024-017.pdf",
+    "pt": {
+      "titulo": "Acta da reunião ordinária de Câmara de 11 de Dezembro de 2024",
+      "tipo": "Actas e deliberações"
+    },
+    "en": {
+      "titulo": "Minutes of the ordinary council meeting of 11 December 2024",
+      "tipo": "Minutes and decisions"
+    }
+  },
+  {
+    "id": "doc-018",
+    "tipo": "contratacao",
+    "ano": 2024,
+    "data": "2024-10-02",
+    "formato": "PDF",
+    "tamanho": "1,9 MB",
+    "ficheiro": "documentos/contratacao-2024-018.pdf",
+    "pt": {
+      "titulo": "Concurso público: fornecimento de energia para a dessalinizadora",
+      "tipo": "Contratação pública"
+    },
+    "en": {
+      "titulo": "Public tender: energy supply for the desalination plant",
+      "tipo": "Public procurement"
+    }
+  }
+]

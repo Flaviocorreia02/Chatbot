@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 120" width="96" height="120" role="img" aria-label="Fotografia por publicar">
+  <rect width="96" height="120" fill="#EDF2F0"/>
+  <circle cx="48" cy="44" r="19" fill="#DDE6E3"/>
+  <path d="M14 120c0-20 15-32 34-32s34 12 34 32z" fill="#DDE6E3"/>
+  <rect x="6" y="6" width="84" height="108" fill="none" stroke="#B9C9C5" stroke-width="2" stroke-dasharray="6 5"/>
+</svg>

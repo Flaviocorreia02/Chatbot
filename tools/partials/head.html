@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="author" content="Câmara Municipal do Maio">
+<meta name="theme-color" content="#07272E">
+<link rel="canonical" href="https://[[SITE_DOMAIN]]/{{SLUG}}.html">
+<link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/{{SLUG}}.html">
+<link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/{{SLUG}}.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/{{SLUG}}.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Câmara Municipal do Maio">
+<meta property="og:locale" content="pt_CV">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="https://[[SITE_DOMAIN]]/{{SLUG}}.html">
+<meta property="og:image" content="https://[[SITE_DOMAIN]]/assets/img/og-{{SLUG}}.jpg">
+<meta property="og:image:alt" content="Salinas e costa da ilha do Maio, Cabo Verde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESC}}">
+<meta name="twitter:image" content="https://[[SITE_DOMAIN]]/assets/img/og-{{SLUG}}.jpg">
+
+<!-- Ícone: marca das salinas -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2307272E'/%3E%3Crect x='9' y='9' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='35' y='9' width='20' height='14' fill='%23E3D2AE'/%3E%3Crect x='9' y='27' width='20' height='14' fill='%23C2566B'/%3E%3Crect x='35' y='27' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='9' y='45' width='46' height='10' fill='%230F4C5C'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+
+<!-- Tipografia -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<!-- CSS crítico: pinta o cabeçalho e o herói antes da folha completa -->
+<style>
+:root{--color-abismo:#07272E;--color-mare:#0F4C5C;--color-sal:#FAFCFB;--color-sal-2:#EDF2F0;--color-sal-3:#DDE6E3;--color-areia:#E3D2AE;--color-salmoura:#C2566B;--color-tinta:#0B1A1E;--font-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--font-body:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-data:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-body);color:var(--color-tinta);background:var(--color-sal);line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+.topbar{background:var(--color-abismo);color:#A9C4C9;font-size:.78rem;font-family:var(--font-data)}
+.site-header{position:sticky;top:0;z-index:80;background:#fff;border-bottom:1px solid var(--color-sal-3)}
+.wrap-wide{width:min(100% - clamp(1rem,4vw,3rem)*2,1440px);margin-inline:auto}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:.75rem}
+.brand{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
+.brand__mark{inline-size:46px;block-size:46px;flex:none}
+.brand__name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;line-height:1.05;letter-spacing:-.022em}
+.brand__sub{font-family:var(--font-data);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#40565C}
+.hero{background:var(--color-abismo);color:var(--color-sal)}
+.skip-link{position:absolute;left:1rem;top:-100px;z-index:200;background:var(--color-abismo);color:var(--color-sal);padding:.75rem 1.5rem;border-radius:4px}
+.skip-link:focus{top:1rem}
+[hidden]{display:none!important}
+</style>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/chatbot.css">
+
+<!-- Dados e comportamento (todos com defer, na ordem de dependência) -->
+<script src="data/inline-data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+<script src="assets/js/chatbot.js" defer></script>
+
+<!-- Dados estruturados: entidade -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "@id": "https://[[SITE_DOMAIN]]/#camara",
+  "name": "Câmara Municipal do Maio",
+  "alternateName": "Maio Municipality Council",
+  "url": "https://[[SITE_DOMAIN]]/",
+  "logo": "https://[[SITE_DOMAIN]]/assets/img/brasao.svg",
+  "email": "[[MAIN_EMAIL]]",
+  "telephone": "[[MAIN_PHONE]]",
+  "taxID": "[[TAX_ID]]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Praça do Município",
+    "addressLocality": "Vila do Maio (Porto Inglês)",
+    "addressRegion": "Ilha do Maio",
+    "postalCode": "[[POSTAL_CODE]]",
+    "addressCountry": "CV"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Concelho do Maio",
+    "containedInPlace": { "@type": "Country", "name": "Cabo Verde" }
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00", "closes": "15:30"
+  }],
+  "sameAs": ["[[FACEBOOK_URL]]", "[[YOUTUBE_URL]]", "[[INSTAGRAM_URL]]"]
+}
+</script>
+<script type="application/ld+json">{{CRUMB_LD}}</script>
+{{EXTRA_HEAD}}
+</head>
+<body>

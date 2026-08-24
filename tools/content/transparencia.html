@@ -1,0 +1,108 @@
+<nav class="breadcrumbs" aria-label="Migalhas de pão" data-i18n-attr="aria-label:crumb.aria">
+  <div class="wrap-wide">
+    <ol>
+      <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+      <li><span aria-current="page" data-i18n="tra.crumb">Transparência</span></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="pagehead">
+    <div class="wrap-wide">
+      <p class="eyebrow" data-i18n="tra.eyebrow">Prestação de contas</p>
+      <h1 data-i18n="tra.title">Onde está o dinheiro do município</h1>
+      <p data-i18n="tra.lede">Orçamento, contas de gerência, plano de actividades, contratação pública, regulamentos e posturas. Tudo em documentos descarregáveis, com o ano e a data de publicação à vista.</p>
+    </div>
+    <div class="pagehead__deco" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><g stroke="#E3D2AE" stroke-width="1.5" fill="none"><rect x="16" y="20" width="52" height="70"/><rect x="76" y="40" width="52" height="50"/><rect x="136" y="14" width="48" height="76"/><rect x="16" y="102" width="168" height="34"/><rect x="16" y="146" width="168" height="34"/></g></svg>
+    </div>
+  </header>
+
+  <div class="wrap-wide section stack-lg">
+
+    <section id="resumo" aria-labelledby="h-resumo">
+      <p class="eyebrow" data-i18n="tra.resumo.eyebrow">Ano em curso</p>
+      <h2 id="h-resumo" data-i18n="tra.resumo.title">O orçamento em quatro números</h2>
+      <p class="text-soft mb-md" data-i18n="tra.resumo.lede">Valores do orçamento aprovado pela Assembleia Municipal. Substituir pelos montantes oficiais antes da publicação.</p>
+      <div class="salinas salinas--dados">
+        <div class="salina reveal" data-fase="1"><span class="dado__valor placeholder-value">[[BUDGET_TOTAL]]</span><span class="dado__label" data-i18n="tra.n1">Orçamento total (CVE)</span><span class="dado__nota placeholder-value">Ano [[BUDGET_YEAR]]</span></div>
+        <div class="salina reveal" data-fase="3"><span class="dado__valor placeholder-value">[[BUDGET_INVESTMENT]]</span><span class="dado__label" data-i18n="tra.n2">Investimento (CVE)</span><span class="dado__nota" data-i18n="tra.n2.nota">Plano plurianual</span></div>
+        <div class="salina reveal" data-fase="4"><span class="dado__valor placeholder-value">[[BUDGET_EXECUTION]]</span><span class="dado__label" data-i18n="tra.n3">Execução</span><span class="dado__nota" data-i18n="tra.n3.nota">Último trimestre reportado</span></div>
+        <div class="salina reveal" data-fase="5"><span class="dado__valor placeholder-value">[[CONTRACTS_COUNT]]</span><span class="dado__label" data-i18n="tra.n4">Contratos publicados</span><span class="dado__nota" data-i18n="tra.n4.nota">Contratação pública</span></div>
+      </div>
+    </section>
+
+    <section id="documentos" aria-labelledby="h-docs">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="tra.docs.eyebrow">Arquivo</p>
+          <h2 id="h-docs" data-i18n="tra.docs.title">Documentos municipais</h2>
+          <p class="text-soft" data-i18n="tra.docs.lede">Filtre por tipo e por ano. Todos os ficheiros abrem em PDF e indicam o tamanho antes da transferência.</p>
+        </div>
+      </div>
+
+      <div class="filters mb-md">
+        <div class="field">
+          <label for="docs-tipo" data-i18n="tra.filtro.tipo">Tipo de documento</label>
+          <select id="docs-tipo">
+            <option value="todos" data-i18n="tra.filtro.todos">Todos os tipos</option>
+            <option value="orcamento" data-i18n="tra.filtro.orcamento">Orçamento</option>
+            <option value="contas" data-i18n="tra.filtro.contas">Contas de gerência</option>
+            <option value="plano" data-i18n="tra.filtro.plano">Plano de actividades</option>
+            <option value="contratacao" data-i18n="tra.filtro.contratacao">Contratação pública</option>
+            <option value="regulamento" data-i18n="tra.filtro.regulamento">Regulamentos e posturas</option>
+            <option value="acta" data-i18n="tra.filtro.acta">Actas e deliberações</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="docs-ano" data-i18n="tra.filtro.ano">Ano</label>
+          <select id="docs-ano"><option value="todos" data-i18n="tra.filtro.anos">Todos os anos</option></select>
+        </div>
+        <div class="field" style="min-width:min(100%,260px)">
+          <label for="docs-search" data-i18n="tra.filtro.pesquisa">Pesquisar por título</label>
+          <input type="search" id="docs-search" data-i18n-attr="placeholder:tra.filtro.pesquisa.ph" placeholder="Ex.: taxas, água, contas" autocomplete="off">
+        </div>
+      </div>
+
+      <p class="visually-hidden" id="docs-status" role="status" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table class="data">
+          <caption data-i18n="tra.tabela.caption">Documentos publicados pela Câmara Municipal do Maio</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="tra.th1">Documento</th>
+              <th scope="col" data-i18n="tra.th2">Tipo</th>
+              <th scope="col" data-i18n="tra.th3">Ano</th>
+              <th scope="col" data-i18n="tra.th4">Publicado</th>
+              <th scope="col" data-i18n="tra.th5">Ficheiro</th>
+            </tr>
+          </thead>
+          <tbody id="docs-body"></tbody>
+        </table>
+      </div>
+      <div id="docs-empty" hidden></div>
+    </section>
+
+    <section id="actas" aria-labelledby="h-actas2">
+      <div class="grid grid--2">
+        <div>
+          <p class="eyebrow" data-i18n="tra.actas.eyebrow">Reuniões</p>
+          <h2 id="h-actas2" data-i18n="tra.actas.title">Actas e deliberações</h2>
+          <div class="article-body">
+            <p data-i18n="tra.actas.p1">As actas das reuniões de Câmara e das sessões da Assembleia Municipal são publicadas no prazo de dez dias úteis após aprovação. Use o filtro «Actas e deliberações» na tabela acima.</p>
+            <p data-i18n="tra.actas.p2">Documentos anteriores a 2015 estão em arquivo físico e consultam-se mediante pedido escrito ao Balcão do Munícipe, com resposta em dez dias úteis.</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow" data-i18n="tra.acesso.eyebrow">Direito de acesso</p>
+          <h2 data-i18n="tra.acesso.title">Pedir um documento que não está aqui</h2>
+          <div class="article-body">
+            <p data-i18n="tra.acesso.p1">Qualquer cidadão pode pedir acesso a documentos administrativos do município. O pedido é feito por escrito, identifica o documento pretendido e é respondido no prazo de dez dias úteis.</p>
+          </div>
+          <p class="mt-md"><a class="btn btn--accent" href="contactos.html#formulario" data-i18n="tra.acesso.cta">Fazer um pedido de acesso</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

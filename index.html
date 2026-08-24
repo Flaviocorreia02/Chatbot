@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Câmara Municipal do Maio — serviços, município e ilha</title>
+<meta name="description" content="Sítio oficial da Câmara Municipal do Maio, Cabo Verde. Certidões, licenciamento, água, taxas, notícias e informação sobre a ilha.">
+<meta name="author" content="Câmara Municipal do Maio">
+<meta name="theme-color" content="#07272E">
+<link rel="canonical" href="https://[[SITE_DOMAIN]]/index.html">
+<link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/index.html">
+<link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/index.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/index.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Câmara Municipal do Maio">
+<meta property="og:locale" content="pt_CV">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:title" content="Câmara Municipal do Maio — serviços, município e ilha">
+<meta property="og:description" content="Sítio oficial da Câmara Municipal do Maio, Cabo Verde. Certidões, licenciamento, água, taxas, notícias e informação sobre a ilha.">
+<meta property="og:url" content="https://[[SITE_DOMAIN]]/index.html">
+<meta property="og:image" content="https://[[SITE_DOMAIN]]/assets/img/og-index.jpg">
+<meta property="og:image:alt" content="Salinas e costa da ilha do Maio, Cabo Verde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Câmara Municipal do Maio — serviços, município e ilha">
+<meta name="twitter:description" content="Sítio oficial da Câmara Municipal do Maio, Cabo Verde. Certidões, licenciamento, água, taxas, notícias e informação sobre a ilha.">
+<meta name="twitter:image" content="https://[[SITE_DOMAIN]]/assets/img/og-index.jpg">
+
+<!-- Ícone: marca das salinas -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2307272E'/%3E%3Crect x='9' y='9' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='35' y='9' width='20' height='14' fill='%23E3D2AE'/%3E%3Crect x='9' y='27' width='20' height='14' fill='%23C2566B'/%3E%3Crect x='35' y='27' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='9' y='45' width='46' height='10' fill='%230F4C5C'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+
+<!-- Tipografia -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<!-- CSS crítico: pinta o cabeçalho e o herói antes da folha completa -->
+<style>
+:root{--color-abismo:#07272E;--color-mare:#0F4C5C;--color-sal:#FAFCFB;--color-sal-2:#EDF2F0;--color-sal-3:#DDE6E3;--color-areia:#E3D2AE;--color-salmoura:#C2566B;--color-tinta:#0B1A1E;--font-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--font-body:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-data:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-body);color:var(--color-tinta);background:var(--color-sal);line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+.topbar{background:var(--color-abismo);color:#A9C4C9;font-size:.78rem;font-family:var(--font-data)}
+.site-header{position:sticky;top:0;z-index:80;background:#fff;border-bottom:1px solid var(--color-sal-3)}
+.wrap-wide{width:min(100% - clamp(1rem,4vw,3rem)*2,1440px);margin-inline:auto}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:.75rem}
+.brand{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
+.brand__mark{inline-size:46px;block-size:46px;flex:none}
+.brand__name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;line-height:1.05;letter-spacing:-.022em}
+.brand__sub{font-family:var(--font-data);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#40565C}
+.hero{background:var(--color-abismo);color:var(--color-sal)}
+.skip-link{position:absolute;left:1rem;top:-100px;z-index:200;background:var(--color-abismo);color:var(--color-sal);padding:.75rem 1.5rem;border-radius:4px}
+.skip-link:focus{top:1rem}
+[hidden]{display:none!important}
+</style>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/chatbot.css">
+
+<!-- Dados e comportamento (todos com defer, na ordem de dependência) -->
+<script src="data/inline-data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+<script src="assets/js/chatbot.js" defer></script>
+
+<!-- Dados estruturados: entidade -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "@id": "https://[[SITE_DOMAIN]]/#camara",
+  "name": "Câmara Municipal do Maio",
+  "alternateName": "Maio Municipality Council",
+  "url": "https://[[SITE_DOMAIN]]/",
+  "logo": "https://[[SITE_DOMAIN]]/assets/img/brasao.svg",
+  "email": "[[MAIN_EMAIL]]",
+  "telephone": "[[MAIN_PHONE]]",
+  "taxID": "[[TAX_ID]]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Praça do Município",
+    "addressLocality": "Vila do Maio (Porto Inglês)",
+    "addressRegion": "Ilha do Maio",
+    "postalCode": "[[POSTAL_CODE]]",
+    "addressCountry": "CV"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Concelho do Maio",
+    "containedInPlace": { "@type": "Country", "name": "Cabo Verde" }
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00", "closes": "15:30"
+  }],
+  "sameAs": ["[[FACEBOOK_URL]]", "[[YOUTUBE_URL]]", "[[INSTAGRAM_URL]]"]
+}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://[[SITE_DOMAIN]]/"}]}</script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Sessão ordinária da Assembleia Municipal do Maio",
+    "startDate": "2026-09-12T09:00:00-01:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Salão Nobre dos Paços do Concelho",
+      "address": { "@type": "PostalAddress", "addressLocality": "Vila do Maio", "addressCountry": "CV" }
+    },
+    "organizer": { "@type": "GovernmentOrganization", "name": "Câmara Municipal do Maio", "url": "https://[[SITE_DOMAIN]]/" },
+    "isAccessibleForFree": true
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Feira municipal do Morro",
+    "startDate": "2026-09-20T07:00:00-01:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": { "@type": "Place", "name": "Largo do Morro", "address": { "@type": "PostalAddress", "addressLocality": "Morro", "addressCountry": "CV" } },
+    "organizer": { "@type": "GovernmentOrganization", "name": "Câmara Municipal do Maio", "url": "https://[[SITE_DOMAIN]]/" },
+    "isAccessibleForFree": true
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Câmara Municipal do Maio",
+    "url": "https://[[SITE_DOMAIN]]/",
+    "inLanguage": ["pt", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://[[SITE_DOMAIN]]/noticias.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+]
+</script>
+
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar para o conteúdo principal</a>
+
+<!-- ============================ BARRA DE TOPO ============================ -->
+<div class="topbar">
+  <div class="wrap-wide topbar__inner">
+    <p class="topbar__facts">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+        <span data-i18n="top.hours">Seg a Sex, 8h00–15h30</span>
+      </span>
+      <span class="is-optional">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z"/></svg>
+        <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a>
+      </span>
+      <span class="is-optional">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <a href="mailto:[[MAIN_EMAIL]]"><span class="placeholder-value">[[MAIN_EMAIL]]</span></a>
+      </span>
+    </p>
+
+    <div class="topbar__tools">
+      <div class="lang-switch" role="group" aria-label="Idioma do sítio / Site language">
+        <button type="button" data-lang-btn="pt" aria-pressed="true" lang="pt" title="Português">PT</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false" lang="en" title="English">EN</button>
+      </div>
+      <button type="button" class="icon-toggle" id="contrast-toggle" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+        <span data-i18n="top.contrast">Alto contraste</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================== CABEÇALHO ============================== -->
+<header class="site-header">
+  <div class="wrap-wide header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <!-- Brasão institucional — substituir por assets/img/brasao.svg -->
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect x="2" y="2" width="60" height="60" rx="4" fill="#07272E"/>
+          <rect x="9" y="9" width="20" height="14" fill="#FAFCFB"/>
+          <rect x="35" y="9" width="20" height="14" fill="#E3D2AE"/>
+          <rect x="9" y="27" width="20" height="14" fill="#C2566B"/>
+          <rect x="35" y="27" width="20" height="14" fill="#FAFCFB"/>
+          <rect x="9" y="45" width="46" height="10" fill="#0F4C5C"/>
+          <path d="M12 50h40" stroke="#FAFCFB" stroke-width="1.5" stroke-dasharray="3 4"/>
+        </svg>
+      </span>
+      <span>
+        <span class="brand__name">Câmara Municipal<br>do Maio</span>
+        <span class="brand__sub">Cabo Verde</span>
+      </span>
+    </a>
+
+    <div class="header__actions">
+      <button type="button" class="icon-btn icon-btn--outline" id="search-open" aria-expanded="false" aria-controls="search-overlay">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+        <span data-i18n="header.search">Pesquisar</span>
+      </button>
+      <a class="btn btn--accent btn--sm" href="servicos.html" data-i18n="header.cta">Serviços ao munícipe</a>
+      <button type="button" class="icon-btn icon-btn--outline" id="menu-open" aria-expanded="false" aria-controls="offcanvas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <span data-i18n="header.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Navegação principal" data-i18n-attr="aria-label:nav.aria">
+    <div class="wrap-wide" style="position:relative">
+      <ul class="mainnav__list">
+        <li><a class="mainnav__link" href="index.html" aria-current="page" data-i18n="nav.inicio">Início</a></li>
+        <li class="mainnav__item--has-mega">
+          <a class="mainnav__link" href="municipio.html" aria-expanded="false" aria-controls="mega-municipio" data-i18n="nav.municipio">Município
+            <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l5 5 5-5"/></svg></a>
+        </li>
+        <li><a class="mainnav__link" href="governacao.html" data-i18n="nav.governacao">Governação</a></li>
+        <li class="mainnav__item--has-mega">
+          <a class="mainnav__link" href="servicos.html" aria-expanded="false" aria-controls="mega-servicos" data-i18n="nav.servicos">Serviços
+            <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l5 5 5-5"/></svg></a>
+        </li>
+        <li><a class="mainnav__link" href="noticias.html" data-i18n="nav.noticias">Notícias</a></li>
+        <li><a class="mainnav__link" href="turismo.html" data-i18n="nav.turismo">Visitar o Maio</a></li>
+        <li><a class="mainnav__link" href="transparencia.html" data-i18n="nav.transparencia">Transparência</a></li>
+        <li><a class="mainnav__link" href="contactos.html" data-i18n="nav.contactos">Contactos</a></li>
+      </ul>
+
+      <!-- Mega-menu: Município -->
+      <div class="mega" id="mega-municipio" hidden>
+        <div class="wrap-wide mega__grid">
+          <div class="mega__cols">
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.conhecer">Conhecer</h3>
+              <ul>
+                <li><a href="municipio.html#historia" data-i18n="mega.municipio.historia">História do concelho</a></li>
+                <li><a href="municipio.html#geografia" data-i18n="mega.municipio.geografia">Geografia e clima</a></li>
+                <li><a href="municipio.html#simbolos" data-i18n="mega.municipio.simbolos">Bandeira e brasão</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.territorio">Território</h3>
+              <ul>
+                <li><a href="municipio.html#localidades" data-i18n="mega.municipio.localidades">As 12 localidades</a></li>
+                <li><a href="municipio.html#numeros" data-i18n="mega.municipio.numeros">O Maio em números</a></li>
+                <li><a href="turismo.html#natureza" data-i18n="mega.municipio.natureza">Áreas protegidas</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.viver">Viver aqui</h3>
+              <ul>
+                <li><a href="servicos.html#agua" data-i18n="mega.municipio.agua">Água e saneamento</a></li>
+                <li><a href="servicos.html#residuos" data-i18n="mega.municipio.residuos">Recolha de resíduos</a></li>
+                <li><a href="servicos.html#mercados" data-i18n="mega.municipio.mercados">Mercados e feiras</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega__promo">
+            <h3 data-i18n="mega.municipio.promo.titulo">Nasceu no Maio e vive fora?</h3>
+            <p data-i18n="mega.municipio.promo.texto">A diáspora pode pedir certidões e comprovativos sem vir à ilha. O pedido é feito por email e a resposta segue em cinco dias úteis.</p>
+            <a class="btn btn--primary btn--sm" href="servicos.html#certidoes" data-i18n="mega.municipio.promo.cta">Pedir certidão à distância</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mega-menu: Serviços -->
+      <div class="mega" id="mega-servicos" hidden>
+        <div class="wrap-wide mega__grid">
+          <div class="mega__cols">
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.documentos">Documentos</h3>
+              <ul>
+                <li><a href="servicos.html#certidoes" data-i18n="mega.servicos.certidoes">Certidões e declarações</a></li>
+                <li><a href="servicos.html#licenciamento" data-i18n="mega.servicos.licenciamento">Licenciamento comercial</a></li>
+                <li><a href="servicos.html#urbanismo" data-i18n="mega.servicos.urbanismo">Obras e urbanismo</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.quotidiano">No dia a dia</h3>
+              <ul>
+                <li><a href="servicos.html#agua" data-i18n="mega.servicos.agua">Água e saneamento</a></li>
+                <li><a href="servicos.html#residuos" data-i18n="mega.servicos.residuos">Resíduos e limpeza</a></li>
+                <li><a href="servicos.html#cemiterios" data-i18n="mega.servicos.cemiterios">Cemitérios</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.tratar">Tratar agora</h3>
+              <ul>
+                <li><a href="index.html#ocorrencia" data-i18n="mega.servicos.ocorrencia">Comunicar uma ocorrência</a></li>
+                <li><a href="servicos.html#taxas" data-i18n="mega.servicos.taxas">Consultar taxas</a></li>
+                <li><a href="contactos.html#marcacao" data-i18n="mega.servicos.marcacao">Marcar atendimento</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega__promo">
+            <h3 data-i18n="mega.servicos.promo.titulo">Não sabe por onde começar?</h3>
+            <p data-i18n="mega.servicos.promo.texto">A Nha Câmara, a assistente do sítio, diz-lhe que documentos levar e quanto tempo demora cada pedido.</p>
+            <button type="button" class="btn btn--primary btn--sm" data-open-chat data-i18n="mega.servicos.promo.cta">Perguntar à Nha Câmara</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================== OFF-CANVAS ============================= -->
+<div class="offcanvas" id="offcanvas" hidden>
+  <div class="offcanvas__scrim"></div>
+  <div class="offcanvas__panel" role="dialog" aria-modal="true" aria-label="Menu de navegação" data-i18n-attr="aria-label:nav.menuAria">
+    <div class="offcanvas__head">
+      <span class="offcanvas__title" data-i18n="nav.menuTitle">Navegação</span>
+      <button type="button" class="icon-btn" id="menu-close" data-i18n-attr="aria-label:nav.close" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Navegação em dispositivo móvel" data-i18n-attr="aria-label:nav.mobileAria">
+      <ul>
+        <li><a href="index.html" aria-current="page" data-i18n="nav.inicio">Início</a></li>
+        <li><a href="municipio.html" data-i18n="nav.municipio">Município</a></li>
+        <li><a href="governacao.html" data-i18n="nav.governacao">Governação</a></li>
+        <li><a href="servicos.html" data-i18n="nav.servicos.long">Serviços ao munícipe</a></li>
+        <li><a href="noticias.html" data-i18n="nav.noticias.long">Notícias e eventos</a></li>
+        <li><a href="turismo.html" data-i18n="nav.turismo">Visitar o Maio</a></li>
+        <li><a href="transparencia.html" data-i18n="nav.transparencia">Transparência</a></li>
+        <li><a href="contactos.html" data-i18n="nav.contactos">Contactos</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="btn btn--ghost btn--block" data-open-search data-i18n="header.search">Pesquisar</button>
+    <a class="btn btn--accent btn--block" href="index.html#ocorrencia" data-i18n="nav.ocorrencia">Comunicar uma ocorrência</a>
+    <p class="offcanvas__foot">
+      <span data-i18n="footer.addressShort">Praça do Município, Vila do Maio, Ilha do Maio, Cabo Verde</span><br>
+      <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a>
+    </p>
+  </div>
+</div>
+
+<!-- =========================== PESQUISA (overlay) ======================== -->
+<div class="search-overlay" id="search-overlay" hidden>
+  <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-label="Pesquisar no sítio" data-i18n-attr="aria-label:search.aria">
+    <div class="wrap">
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+        <label class="visually-hidden" for="search-input" data-i18n="search.label">O que procura?</label>
+        <input type="search" id="search-input" placeholder="O que procura?" data-i18n-attr="placeholder:search.label" autocomplete="off" spellcheck="false">
+        <button type="button" class="icon-btn" id="search-close" data-i18n-attr="aria-label:search.close" aria-label="Fechar pesquisa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p class="visually-hidden" id="search-count" role="status" aria-live="polite"></p>
+      <ul class="search-results" id="search-results"></ul>
+      <p class="search-hint" data-i18n-html="search.hint"><kbd>&darr;</kbd> e <kbd>&uarr;</kbd> para navegar · <kbd>Enter</kbd> para abrir · <kbd>Esc</kbd> para fechar</p>
+    </div>
+  </div>
+</div>
+<main id="main">
+
+  <!-- ================================ HERÓI =============================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap-wide hero__grid">
+      <div class="reveal-load">
+        <p class="eyebrow" data-i18n="home.hero.eyebrow">Concelho do Maio · Cabo Verde</p>
+        <h1 id="hero-title" data-i18n-html="home.hero.title">Tratar da vida no Maio <em>sem dar voltas.</em></h1>
+        <p class="hero__lede" data-i18n="home.hero.lede">Certidões, licenças, água e ocorrências num sítio só. Cada serviço diz o que levar, quanto custa e quanto tempo demora — antes de sair de casa.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="#servicos-rapidos" data-i18n="home.hero.cta1">Ver serviços ao munícipe</a>
+          <button type="button" class="btn btn--ghost" data-open-chat data-i18n="home.hero.cta2">Perguntar à Nha Câmara</button>
+        </div>
+        <p class="hero__meta">
+          <span data-i18n="home.hero.meta1">Atendimento <b>Seg–Sex, 8h00–15h30</b></span>
+          <span data-i18n="home.hero.meta2">Praça do Município, <b>Vila do Maio</b></span>
+        </p>
+      </div>
+
+      <figure class="hero__figure reveal-load">
+        <!-- Planta das salinas do Porto Inglês: a geometria que estrutura todo o sítio -->
+        <svg viewBox="0 0 520 400" role="img" aria-labelledby="hero-fig-title hero-fig-desc">
+          <title id="hero-fig-title">Planta esquemática das salinas do Porto Inglês</title>
+          <desc id="hero-fig-desc">Desenho técnico de tanques de evaporação rectangulares separados por muros de sal, junto à linha de costa da ilha do Maio, com a direcção do vento nordeste assinalada.</desc>
+          <defs>
+            <pattern id="cristais" width="8" height="8" patternUnits="userSpaceOnUse">
+              <path d="M0 8L8 0" stroke="#1C6B7E" stroke-width=".6" opacity=".5"/>
+            </pattern>
+          </defs>
+          <!-- mar -->
+          <path d="M0 300 C 90 282 150 318 226 300 C 320 278 400 320 520 296 L520 400 L0 400 Z" fill="#0F4C5C" opacity=".85"/>
+          <path d="M0 300 C 90 282 150 318 226 300 C 320 278 400 320 520 296" fill="none" stroke="#E3D2AE" stroke-width="2"/>
+          <!-- tanques de evaporação -->
+          <g stroke="#FAFCFB" stroke-width="2">
+            <rect x="28" y="40" width="132" height="74" fill="#0C333B"/>
+            <rect x="166" y="40" width="96" height="74" fill="url(#cristais)"/>
+            <rect x="268" y="40" width="118" height="74" fill="#0C333B"/>
+            <rect x="392" y="40" width="100" height="112" fill="#123F49"/>
+            <rect x="28" y="120" width="88" height="60" fill="#123F49"/>
+            <rect x="122" y="120" width="140" height="60" fill="#C2566B" opacity=".72"/>
+            <rect x="268" y="120" width="118" height="60" fill="#0C333B"/>
+            <rect x="28" y="186" width="132" height="66" fill="#C2566B" opacity=".5"/>
+            <rect x="166" y="186" width="96" height="66" fill="#E3D2AE" opacity=".9"/>
+            <rect x="268" y="186" width="118" height="66" fill="#123F49"/>
+            <rect x="392" y="158" width="100" height="94" fill="#E3D2AE" opacity=".65"/>
+          </g>
+          <!-- montes de sal -->
+          <g fill="#FAFCFB">
+            <path d="M186 210l16 26h-32z"/><path d="M214 216l12 20h-24z"/>
+            <path d="M420 208l18 28h-36z"/>
+          </g>
+          <!-- vento nordeste -->
+          <g stroke="#E3D2AE" stroke-width="1.6" fill="none" opacity=".8">
+            <path d="M330 292 q 40 -14 78 -4" stroke-dasharray="5 5"/>
+            <path d="M400 282 l10 6 -9 7"/>
+          </g>
+          <text x="28" y="24" fill="#A9C4C9" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2">SALINAS DO PORTO INGLÊS</text>
+          <text x="330" y="330" fill="#E3D2AE" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2">VENTO NE</text>
+        </svg>
+        <figcaption class="hero__caption" data-i18n="home.hero.caption">Planta das salinas do Porto Inglês — a grelha que organiza este sítio.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========================= SERVIÇOS RÁPIDOS ========================== -->
+  <section class="section" id="servicos-rapidos" aria-labelledby="sr-title">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="home.servicos.eyebrow">Oito tanques, oito tarefas</p>
+          <h2 id="sr-title" data-i18n="home.servicos.title">Comece por aqui</h2>
+          <p class="text-soft" data-i18n="home.servicos.lede">Cada cartão leva directamente ao que precisa de fazer, com a lista de documentos e o prazo de resposta.</p>
+        </div>
+        <div class="section-head__aside">
+          <a class="link-arrow" href="servicos.html" data-i18n="home.servicos.todos">Todos os serviços
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="salinas">
+        <a class="salina reveal" data-fase="1" href="servicos.html#certidoes">
+          <span class="salina__index" aria-hidden="true">01</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M7 3h13l5 5v21H7z"/><path d="M20 3v5h5"/><path d="M11 15h10M11 20h7"/><circle cx="22" cy="23" r="4" fill="none"/><path d="M22 21.4v3.2M20.4 23h3.2" stroke-width="1.4"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.certidao">Pedir uma certidão</span>
+          <span class="salina__desc" data-i18n="home.card.certidao.desc">Residência, propriedade, actividade. Resposta em 5 dias úteis.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="2" href="servicos.html#taxas">
+          <span class="salina__index" aria-hidden="true">02</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="6" width="24" height="20" rx="2"/><path d="M4 12h24M12 12v14"/><path d="M17 17h7M17 21h5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.taxas">Consultar taxas</span>
+          <span class="salina__desc" data-i18n="home.card.taxas.desc">Tabela municipal em vigor, por serviço e por artigo.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="3" href="servicos.html#urbanismo">
+          <span class="salina__index" aria-hidden="true">03</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 27V13l9-6 9 6v14z"/><path d="M13 27v-7h5v7"/><path d="M22 27h6V17l-6-4"/><path d="M25 21h1.5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.obras">Licença de obras</span>
+          <span class="salina__desc" data-i18n="home.card.obras.desc">Construir, ampliar ou legalizar. Projecto e planta obrigatórios.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="4" href="#ocorrencia">
+          <span class="salina__index" aria-hidden="true">04</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M16 3c-4.4 0-8 3.5-8 7.9 0 5.9 8 18.1 8 18.1s8-12.2 8-18.1C24 6.5 20.4 3 16 3z" stroke-linejoin="round"/><path d="M16 8v5M16 16.5v.5"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.ocorrencia">Comunicar uma ocorrência</span>
+          <span class="salina__desc" data-i18n="home.card.ocorrencia.desc">Rutura de água, lixo por recolher, iluminação, buracos na via.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="5" href="contactos.html#marcacao">
+          <span class="salina__index" aria-hidden="true">05</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="4" y="7" width="24" height="21" rx="2"/><path d="M4 13h24M11 4v6M21 4v6"/><path d="M12 20l3 3 6-6" stroke-linecap="round"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.marcacao">Marcar atendimento</span>
+          <span class="salina__desc" data-i18n="home.card.marcacao.desc">Escolha o serviço e a hora. Evita fila no balcão.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="1" href="servicos.html#agua">
+          <span class="salina__index" aria-hidden="true">06</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M16 4s-7 8.4-7 13a7 7 0 0 0 14 0c0-4.6-7-13-7-13z"/><path d="M12.5 18.5a3.5 3.5 0 0 0 3.5 3.5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.agua">Pagar a água</span>
+          <span class="salina__desc" data-i18n="home.card.agua.desc">Consumo, tarifário, novas ligações e avarias na rede.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="6" href="servicos.html#residuos">
+          <span class="salina__index" aria-hidden="true">07</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 9h20M13 9V5h6v4"/><path d="M8 9l1.5 19h13L24 9"/><path d="M13 14v9M19 14v9" stroke-linecap="round"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.residuos">Horário do lixo</span>
+          <span class="salina__desc" data-i18n="home.card.residuos.desc">Dias e horas de recolha em cada uma das doze localidades.</span>
+        </a>
+
+        <a class="salina reveal" data-fase="3" href="servicos.html#licenciamento">
+          <span class="salina__index" aria-hidden="true">08</span>
+          <span class="salina__icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 12l3-6h18l3 6"/><path d="M4 12a4 4 0 0 0 8 0 4 4 0 0 0 8 0 4 4 0 0 0 8 0"/><path d="M6 15v13h20V15"/><path d="M13 28v-8h6v8"/></svg>
+          </span>
+          <span class="salina__title" data-i18n="home.card.licenca">Abrir um negócio</span>
+          <span class="salina__desc" data-i18n="home.card.licenca.desc">Licença comercial, esplanada, publicidade e ocupação de via.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== NOTÍCIAS ============================== -->
+  <section class="section section--alt" aria-labelledby="nt-title">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="home.noticias.eyebrow">Do município</p>
+          <h2 id="nt-title" data-i18n="home.noticias.title">Notícias e deliberações</h2>
+        </div>
+        <div class="section-head__aside">
+          <a class="link-arrow" href="noticias.html" data-i18n="home.noticias.arquivo">Arquivo de notícias
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="grid grid--3" id="news-highlights"></div>
+    </div>
+  </section>
+
+  <!-- ============================= CALENDÁRIO ============================= -->
+  <section class="section" aria-labelledby="cal-title">
+    <div class="wrap-wide grid grid--sidebar">
+      <div>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="home.agenda.eyebrow">Agenda municipal</p>
+            <h2 id="cal-title" data-i18n="home.agenda.title">O que aí vem</h2>
+          </div>
+        </div>
+        <div class="calendar" id="calendar"></div>
+      </div>
+      <aside class="panel panel--sand" aria-labelledby="aviso-title">
+        <h3 class="panel__title" id="aviso-title" data-i18n="home.aviso.title">Assembleia Municipal: sessões públicas</h3>
+        <p style="font-size:var(--fs-sm)" data-i18n="home.aviso.texto">As sessões ordinárias da Assembleia Municipal são públicas e realizam-se no Salão Nobre dos Paços do Concelho. A ordem de trabalhos é afixada com oito dias de antecedência.</p>
+        <p class="mt-md"><a class="btn btn--ghost btn--sm" href="governacao.html#assembleia" data-i18n="home.aviso.cta">Ver a Assembleia Municipal</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================ O MAIO EM DADOS ========================= -->
+  <section class="section section--deep" aria-labelledby="dados-title">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="home.dados.eyebrow">O concelho, medido</p>
+          <h2 id="dados-title" data-i18n="home.dados.title">O Maio em números</h2>
+        </div>
+        <div class="section-head__aside">
+          <a class="link-arrow" href="municipio.html#numeros" data-i18n="home.dados.cta">Fontes e séries completas
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="salinas salinas--dados">
+        <div class="salina reveal" data-fase="1">
+          <span class="dado__valor placeholder-value">[[POPULATION]]</span>
+          <span class="dado__label" data-i18n="home.dados.populacao">Residentes</span>
+          <span class="dado__nota" data-i18n="home.dados.populacao.nota">Censo [[CENSUS_YEAR]]</span>
+        </div>
+        <div class="salina reveal" data-fase="3">
+          <span class="dado__valor placeholder-value">[[AREA_KM2]]</span>
+          <span class="dado__label" data-i18n="home.dados.area">km² de território</span>
+          <span class="dado__nota" data-i18n="home.dados.area.nota">Área do concelho</span>
+        </div>
+        <div class="salina reveal" data-fase="5">
+          <span class="dado__valor mono">12</span>
+          <span class="dado__label" data-i18n="home.dados.localidades">Localidades</span>
+          <span class="dado__nota" data-i18n="home.dados.localidades.nota">Da Vila ao Santo António</span>
+        </div>
+        <div class="salina reveal" data-fase="4">
+          <span class="dado__valor placeholder-value">[[COASTLINE_KM]]</span>
+          <span class="dado__label" data-i18n="home.dados.costa">km de costa</span>
+          <span class="dado__nota" data-i18n="home.dados.costa.nota">Praias e arriba</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= OCORRÊNCIA ============================= -->
+  <section class="section" id="ocorrencia" aria-labelledby="oc-title">
+    <div class="wrap-wide grid grid--sidebar">
+      <div>
+        <p class="eyebrow" data-i18n="home.ocorrencia.eyebrow">Serviços urbanos</p>
+        <h2 id="oc-title" data-i18n="home.ocorrencia.title">Comunicar uma ocorrência</h2>
+        <p class="lede mb-md" data-i18n="home.ocorrencia.lede">Rutura na conduta, contentor por despejar, candeeiro apagado ou buraco na via: descreva o problema e a Câmara encaminha para o serviço competente.</p>
+
+        <form class="form" id="form-ocorrencia" aria-describedby="oc-ajuda">
+          <p class="visually-hidden" id="oc-ajuda" data-i18n="home.ocorrencia.ajuda">Todos os campos assinalados com asterisco são obrigatórios.</p>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="oc-tipo" data-i18n-html="home.ocorrencia.tipo">Tipo de ocorrência <span class="req" aria-hidden="true">*</span></label>
+              <select id="oc-tipo" name="tipo" required>
+                <option value="" data-i18n="home.ocorrencia.escolher">Escolher…</option>
+                <option value="agua" data-i18n="home.ocorrencia.tipo.agua">Água: rutura ou falta de abastecimento</option>
+                <option value="saneamento" data-i18n="home.ocorrencia.tipo.saneamento">Saneamento e esgotos</option>
+                <option value="residuos" data-i18n="home.ocorrencia.tipo.residuos">Resíduos e limpeza urbana</option>
+                <option value="iluminacao" data-i18n="home.ocorrencia.tipo.iluminacao">Iluminação pública</option>
+                <option value="via" data-i18n="home.ocorrencia.tipo.via">Via pública e sinalização</option>
+                <option value="outro" data-i18n="home.ocorrencia.tipo.outro">Outro assunto</option>
+              </select>
+              <p class="hint" data-i18n="home.ocorrencia.tipo.hint">Se tiver dúvidas, escolha “Outro assunto”.</p>
+            </div>
+
+            <div class="field">
+              <label for="oc-local" data-i18n-html="home.ocorrencia.local">Localidade <span class="req" aria-hidden="true">*</span></label>
+              <select id="oc-local" name="localidade" required>
+                <option value="" data-i18n="home.ocorrencia.escolher">Escolher…</option>
+                <option>Vila do Maio (Porto Inglês)</option>
+                <option>Calheta</option>
+                <option>Morro</option>
+                <option>Morrinho</option>
+                <option>Pedro Vaz</option>
+                <option>Alcatraz</option>
+                <option>Figueira da Horta</option>
+                <option>Cascabulho</option>
+                <option>Barreiro</option>
+                <option>Ribeira Dom João</option>
+                <option>Pilão Cão</option>
+                <option>Santo António</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="oc-desc" data-i18n-html="home.ocorrencia.desc">Descrição do problema <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="oc-desc" name="descricao" required minlength="20" data-i18n-attr="placeholder:home.ocorrencia.desc.ph" placeholder="Onde é, desde quando, e o que está a acontecer."></textarea>
+            <p class="hint" data-i18n="home.ocorrencia.desc.hint">Indique um ponto de referência: “junto à escola”, “atrás do mercado”.</p>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field field--file">
+              <label for="oc-foto" data-i18n="home.ocorrencia.foto">Fotografia (opcional)</label>
+              <input type="file" id="oc-foto" name="fotografia" accept="image/jpeg,image/png,image/webp">
+              <p class="hint" data-i18n="home.ocorrencia.foto.hint">JPG, PNG ou WebP até 5 MB.</p>
+            </div>
+            <div class="field">
+              <label for="oc-contacto" data-i18n="home.ocorrencia.contacto">Telefone ou email para resposta</label>
+              <input type="tel" id="oc-contacto" name="contacto" autocomplete="tel" placeholder="[[MAIN_PHONE]]">
+              <p class="hint" data-i18n="home.ocorrencia.contacto.hint">Sem contacto, não é possível informá-lo do seguimento.</p>
+            </div>
+          </div>
+
+          <div class="checkbox field">
+            <input type="checkbox" id="oc-rgpd" name="consentimento" required>
+            <label for="oc-rgpd" data-i18n="home.ocorrencia.rgpd">Autorizo o tratamento destes dados para dar seguimento à ocorrência.</label>
+          </div>
+
+          <p class="form__status" hidden></p>
+          <div class="cluster">
+            <button type="submit" class="btn btn--accent" data-i18n="home.ocorrencia.submit">Submeter ocorrência</button>
+            <span class="text-soft" style="font-size:var(--fs-xs)" data-i18n="home.ocorrencia.prazo">Resposta com número de registo em 1 dia útil.</span>
+          </div>
+        </form>
+      </div>
+
+      <aside class="panel" aria-labelledby="urg-title">
+        <h3 class="panel__title" id="urg-title" data-i18n="home.urgencia.title">É urgente?</h3>
+        <p style="font-size:var(--fs-sm)" data-i18n="home.urgencia.texto">Rutura de água com inundação, poste de eletricidade caído ou risco para pessoas: não use o formulário. Telefone directamente.</p>
+        <p class="mt-md"><a class="btn btn--primary btn--block" href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a></p>
+        <hr>
+        <h3 class="panel__title" data-i18n="home.urgencia.depois">Depois de submeter</h3>
+        <ul style="font-size:var(--fs-sm);display:grid;gap:.5em;padding-left:1.1em">
+          <li data-i18n="home.urgencia.p1">Recebe um número de registo por email ou SMS.</li>
+          <li data-i18n="home.urgencia.p2">O serviço competente avalia no prazo de 3 dias úteis.</li>
+          <li data-i18n="home.urgencia.p3">É informado da data prevista de resolução.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================== TURISMO ============================== -->
+  <section class="section section--sand" aria-labelledby="tur-title">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="home.turismo.eyebrow">A outra metade do trabalho</p>
+          <h2 id="tur-title" data-i18n="home.turismo.title">O Maio para quem chega</h2>
+          <p class="text-soft" data-i18n="home.turismo.lede">Trinta quilómetros de praia quase vazia, o único bosque de acácias do arquipélago e tartarugas que desovam entre Junho e Outubro.</p>
+        </div>
+        <div class="section-head__aside">
+          <a class="btn btn--primary" href="turismo.html" data-i18n="home.turismo.cta">Planear a visita</a>
+        </div>
+      </div>
+      <div class="places">
+        <div class="place"><p class="place__tag">01</p><p class="place__name">Praia de Santana</p><p class="place__note" data-i18n="home.turismo.p1">Areia branca a dez minutos a pé da Vila.</p></div>
+        <div class="place"><p class="place__tag">02</p><p class="place__name">Barreiro-Figueira</p><p class="place__note" data-i18n="home.turismo.p2">Área protegida, bosque de acácias e aves.</p></div>
+        <div class="place"><p class="place__tag">03</p><p class="place__name">Salinas do Porto Inglês</p><p class="place__note" data-i18n="home.turismo.p3">Tanques de sal ainda em exploração artesanal.</p></div>
+        <div class="place"><p class="place__tag">04</p><p class="place__name">Morro &amp; Calheta</p><p class="place__note" data-i18n="home.turismo.p4">Pesca artesanal, peixe grelhado e queijo de cabra.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <div class="footer__salt" aria-hidden="true"></div>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="2" y="2" width="60" height="60" rx="4" fill="#0F4C5C"/>
+              <rect x="9" y="9" width="20" height="14" fill="#FAFCFB"/>
+              <rect x="35" y="9" width="20" height="14" fill="#E3D2AE"/>
+              <rect x="9" y="27" width="20" height="14" fill="#C2566B"/>
+              <rect x="35" y="27" width="20" height="14" fill="#FAFCFB"/>
+              <rect x="9" y="45" width="46" height="10" fill="#07272E"/>
+              <path d="M12 50h40" stroke="#FAFCFB" stroke-width="1.5" stroke-dasharray="3 4"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand__name">Câmara Municipal<br>do Maio</span>
+            <span class="brand__sub">Cabo Verde</span>
+          </span>
+        </a>
+        <div class="footer__contact mt-md">
+          <p data-i18n-html="footer.address">Praça do Município, Vila do Maio<br>Ilha do Maio, Cabo Verde</p>
+          <p><strong data-i18n="footer.phoneLabel">Telefone:</strong> <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a></p>
+          <p><strong data-i18n="footer.emailLabel">Email:</strong> <a href="mailto:[[MAIN_EMAIL]]"><span class="placeholder-value">[[MAIN_EMAIL]]</span></a></p>
+          <p><strong data-i18n="footer.nifLabel">NIF:</strong> <span class="placeholder-value">[[TAX_ID]]</span></p>
+        </div>
+        <div class="socials">
+          <a href="[[FACEBOOK_URL]]" aria-label="Facebook da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.5-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2V10H7.5v3h2.8v8z"/></svg>
+          </a>
+          <a href="[[YOUTUBE_URL]]" aria-label="Canal de YouTube da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5A2.5 2.5 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12zM10 15V9l5 3z"/></svg>
+          </a>
+          <a href="[[INSTAGRAM_URL]]" aria-label="Instagram da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Mapa do sítio — serviços" data-i18n-attr="aria-label:footer.aria.servicos">
+        <h2 data-i18n="footer.col.servicos">Serviços</h2>
+        <ul>
+          <li><a href="servicos.html#certidoes" data-i18n="footer.link.certidoes">Certidões e declarações</a></li>
+          <li><a href="servicos.html#licenciamento" data-i18n="footer.link.licenciamento">Licenciamento comercial</a></li>
+          <li><a href="servicos.html#urbanismo" data-i18n="footer.link.urbanismo">Obras e urbanismo</a></li>
+          <li><a href="servicos.html#agua" data-i18n="footer.link.agua">Água e saneamento</a></li>
+          <li><a href="servicos.html#taxas" data-i18n="footer.link.taxas">Tabela de taxas</a></li>
+          <li><a href="index.html#ocorrencia" data-i18n="footer.link.ocorrencia">Comunicar ocorrência</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Mapa do sítio — município" data-i18n-attr="aria-label:footer.aria.municipio">
+        <h2 data-i18n="footer.col.municipio">Município</h2>
+        <ul>
+          <li><a href="municipio.html" data-i18n="footer.link.municipio">O concelho do Maio</a></li>
+          <li><a href="governacao.html" data-i18n="footer.link.governacao">Governação municipal</a></li>
+          <li><a href="transparencia.html" data-i18n="footer.link.transparencia">Transparência</a></li>
+          <li><a href="noticias.html" data-i18n="footer.link.noticias">Notícias e eventos</a></li>
+          <li><a href="turismo.html" data-i18n="footer.link.turismo">Visitar o Maio</a></li>
+          <li><a href="contactos.html" data-i18n="footer.link.contactos">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 data-i18n="footer.col.links">Ligações úteis</h2>
+        <ul>
+          <li><a href="https://www.governo.cv" rel="noopener" data-i18n="footer.link.governo">Governo de Cabo Verde</a></li>
+          <li><a href="https://www.portondinosilha.cv" rel="noopener" data-i18n="footer.link.porton">Porton di nos Ilha</a></li>
+          <li><a href="https://www.ine.cv" rel="noopener" data-i18n="footer.link.ine">Instituto Nacional de Estatística</a></li>
+          <li><a href="https://www.anmcv.cv" rel="noopener" data-i18n="footer.link.anmcv">Assoc. Nacional de Municípios</a></li>
+          <li><a href="https://www.tribunalcontas.cv" rel="noopener" data-i18n="footer.link.tc">Tribunal de Contas</a></li>
+        </ul>
+
+        <h2 class="mt-md" data-i18n="footer.col.newsletter">Boletim municipal</h2>
+        <form class="newsletter" id="form-newsletter">
+          <p style="font-size:var(--fs-xs)" data-i18n="footer.newsletter.texto">Um email por mês com deliberações, obras e eventos. Cancela quando quiser.</p>
+          <div class="newsletter__row">
+            <div class="field">
+              <label class="visually-hidden" for="nl-email" data-i18n="footer.newsletter.label">O seu email</label>
+              <input type="email" id="nl-email" name="email" required placeholder="nome@exemplo.cv" autocomplete="email">
+            </div>
+            <button type="submit" class="btn btn--accent" data-i18n="footer.newsletter.cta">Subscrever boletim</button>
+          </div>
+          <p class="form__status" hidden></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> <span data-i18n="footer.copy">Câmara Municipal do Maio. Todos os direitos reservados.</span></p>
+      <ul>
+        <li><a href="contactos.html#privacidade" data-i18n="footer.link.privacidade">Política de privacidade</a></li>
+        <li><a href="contactos.html#cookies" data-i18n="footer.link.cookies">Política de cookies</a></li>
+        <li><a href="contactos.html#acessibilidade" data-i18n="footer.link.acessibilidade">Declaração de acessibilidade</a></li>
+        <li><a href="sitemap.xml" data-i18n="footer.link.sitemap">Mapa do sítio</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

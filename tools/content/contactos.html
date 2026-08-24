@@ -1,0 +1,184 @@
+<nav class="breadcrumbs" aria-label="Migalhas de pão" data-i18n-attr="aria-label:crumb.aria">
+  <div class="wrap-wide">
+    <ol>
+      <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+      <li><span aria-current="page" data-i18n="con.crumb">Contactos</span></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="pagehead">
+    <div class="wrap-wide">
+      <p class="eyebrow" data-i18n="con.eyebrow">Atendimento</p>
+      <h1 data-i18n="con.title">Falar com a Câmara</h1>
+      <p data-i18n="con.lede">O Balcão do Munícipe atende de segunda a sexta, das 8h00 às 15h30, nos Paços do Concelho, na Vila do Maio. Para assuntos específicos, use o contacto directo do serviço.</p>
+    </div>
+    <div class="pagehead__deco" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><g stroke="#E3D2AE" stroke-width="1.5" fill="none"><rect x="20" y="24" width="160" height="44"/><rect x="20" y="80" width="76" height="44"/><rect x="106" y="80" width="74" height="44"/><rect x="20" y="136" width="160" height="42"/></g></svg>
+    </div>
+  </header>
+
+  <div class="wrap-wide section grid grid--sidebar">
+    <div class="stack-lg">
+
+      <!-- FORMULÁRIO -->
+      <section id="formulario" aria-labelledby="h-form">
+        <p class="eyebrow" data-i18n="con.form.eyebrow">Mensagem escrita</p>
+        <h2 id="h-form" data-i18n="con.form.title">Enviar uma mensagem</h2>
+        <p class="lede mb-md" data-i18n="con.form.lede">A Câmara responde no prazo de três dias úteis. Para comunicar avarias ou problemas na via pública, use antes o formulário de ocorrências.</p>
+
+        <form class="form" id="form-contacto">
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="ct-nome" data-i18n-html="con.form.nome">Nome completo <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="ct-nome" name="nome" required autocomplete="name" minlength="3">
+            </div>
+            <div class="field">
+              <label for="ct-email" data-i18n-html="con.form.email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="ct-email" name="email" required autocomplete="email" placeholder="nome@exemplo.cv">
+              <p class="hint" data-i18n="con.form.email.hint">É para aqui que segue a resposta.</p>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="ct-tel" data-i18n="con.form.tel">Telefone (opcional)</label>
+              <input type="tel" id="ct-tel" name="telefone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="ct-assunto" data-i18n-html="con.form.assunto">Assunto <span class="req" aria-hidden="true">*</span></label>
+              <select id="ct-assunto" name="assunto" required>
+                <option value="" data-i18n="con.form.escolher">Escolher…</option>
+                <option value="certidoes" data-i18n="con.form.a1">Certidões e documentos</option>
+                <option value="urbanismo" data-i18n="con.form.a2">Obras e urbanismo</option>
+                <option value="agua" data-i18n="con.form.a3">Água e saneamento</option>
+                <option value="licenciamento" data-i18n="con.form.a4">Licenciamento comercial</option>
+                <option value="transparencia" data-i18n="con.form.a5">Pedido de acesso a documentos</option>
+                <option value="imprensa" data-i18n="con.form.a6">Imprensa e comunicação</option>
+                <option value="outro" data-i18n="con.form.a7">Outro assunto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ct-msg" data-i18n-html="con.form.msg">Mensagem <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="ct-msg" name="mensagem" required minlength="20" data-i18n-attr="placeholder:con.form.msg.ph" placeholder="Descreva o assunto e, se aplicável, indique o número de processo."></textarea>
+          </div>
+
+          <div class="checkbox field">
+            <input type="checkbox" id="ct-rgpd" name="consentimento" required>
+            <label for="ct-rgpd" data-i18n="con.form.rgpd">Autorizo o tratamento destes dados para efeitos de resposta ao pedido.</label>
+          </div>
+
+          <p class="form__status" hidden></p>
+          <div class="cluster">
+            <button type="submit" class="btn btn--accent" data-i18n="con.form.submit">Enviar mensagem</button>
+            <span class="text-soft" style="font-size:var(--fs-xs)" data-i18n="con.form.prazo">Resposta em 3 dias úteis.</span>
+          </div>
+        </form>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos-contactos" aria-labelledby="h-dep">
+        <p class="eyebrow" data-i18n="con.dep.eyebrow">Contactos directos</p>
+        <h2 id="h-dep" data-i18n="con.dep.title">Por serviço</h2>
+        <div class="table-wrap mt-md">
+          <table class="data">
+            <caption data-i18n="con.dep.caption">Serviços da Câmara Municipal do Maio</caption>
+            <thead><tr><th scope="col" data-i18n="con.dep.th1">Serviço</th><th scope="col" data-i18n="con.dep.th2">Trata de</th><th scope="col" data-i18n="con.dep.th3">Contacto</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s1">Balcão do Munícipe</td><td data-label="Trata de" data-i18n="con.dep.t1">Certidões, licenças, marcações e encaminhamento geral.</td><td data-label="Contacto" class="placeholder-value">[[DESK_PHONE]] · [[DESK_EMAIL]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s2">Serviços Municipais de Água</td><td data-label="Trata de" data-i18n="con.dep.t2">Ligações, contadores, facturas e avarias na rede.</td><td data-label="Contacto" class="placeholder-value">[[WATER_PHONE]] · [[WATER_EMAIL]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s3">Divisão de Urbanismo</td><td data-label="Trata de" data-i18n="con.dep.t3">Licenças de obras, vistorias e fiscalização.</td><td data-label="Contacto" class="placeholder-value">[[URBAN_PHONE]] · [[URBAN_EMAIL]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s4">Divisão de Ambiente</td><td data-label="Trata de" data-i18n="con.dep.t4">Resíduos, limpeza urbana, praias e espaços verdes.</td><td data-label="Contacto" class="placeholder-value">[[ENV_PHONE]] · [[ENV_EMAIL]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s5">Tesouraria</td><td data-label="Trata de" data-i18n="con.dep.t5">Pagamentos de taxas, água e licenças. Encerra às 14h30.</td><td data-label="Contacto" class="placeholder-value">[[TREASURY_PHONE]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s6">Gabinete de Comunicação</td><td data-label="Trata de" data-i18n="con.dep.t6">Imprensa, entrevistas e material fotográfico.</td><td data-label="Contacto" class="placeholder-value">[[PRESS_EMAIL]]</td></tr>
+              <tr><td data-label="Serviço" data-i18n="con.dep.s7">Protecção Civil Municipal</td><td data-label="Trata de" data-i18n="con.dep.t7">Emergências, avisos e apoio em situações de risco.</td><td data-label="Contacto" class="placeholder-value">[[CIVIL_PROTECTION_PHONE]]</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- MAPA -->
+      <section id="mapa" aria-labelledby="h-mapa">
+        <p class="eyebrow" data-i18n="con.mapa.eyebrow">Onde estamos</p>
+        <h2 id="h-mapa" data-i18n="con.mapa.title">Paços do Concelho</h2>
+        <p class="text-soft mb-md" data-i18n="con.mapa.lede">Praça do Município, Vila do Maio (Porto Inglês), ilha do Maio, Cabo Verde.</p>
+        <!-- Mapa: substituir o atributo data-src pelo endereço de incorporação e passá-lo
+             para src (ou definir [[MAP_EMBED_URL]] e remover o about:blank). -->
+        <div class="map-frame">
+          <iframe title="Mapa da localização dos Paços do Concelho do Maio" data-i18n-attr="title:con.mapa.iframe"
+                  src="about:blank" data-src="[[MAP_EMBED_URL]]" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <p class="mt-md text-soft" style="font-size:var(--fs-xs)" data-i18n="con.mapa.nota">Substitua [[MAP_EMBED_URL]] pelo endereço de incorporação do mapa escolhido (OpenStreetMap ou Google Maps) e passe-o do atributo <code>data-src</code> para <code>src</code>.</p>
+      </section>
+
+      <!-- MARCAÇÃO -->
+      <section id="marcacao" aria-labelledby="h-marc">
+        <p class="eyebrow" data-i18n="con.marc.eyebrow">Sem fila</p>
+        <h2 id="h-marc" data-i18n="con.marc.title">Marcar atendimento</h2>
+        <div class="article-body">
+          <p data-i18n="con.marc.p1">Marque por telefone ou por email, indicando o serviço pretendido e dois horários possíveis. A confirmação chega no mesmo dia útil. Chegue cinco minutos antes com os documentos necessários.</p>
+        </div>
+        <div class="cluster mt-md">
+          <a class="btn btn--primary" href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a>
+          <a class="btn btn--ghost" href="mailto:[[DESK_EMAIL]]"><span class="placeholder-value">[[DESK_EMAIL]]</span></a>
+        </div>
+      </section>
+
+      <!-- POLÍTICAS -->
+      <section id="privacidade" aria-labelledby="h-priv">
+        <p class="eyebrow" data-i18n="con.pol.eyebrow">Políticas</p>
+        <h2 id="h-priv" data-i18n="con.priv.title">Privacidade, cookies e acessibilidade</h2>
+        <div class="accordion mt-md">
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="pol-1" id="pol-1-btn"><span data-i18n="con.priv.q">Como são tratados os seus dados</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="pol-1" role="region" aria-labelledby="pol-1-btn" hidden>
+              <p data-i18n="con.priv.a1">Os dados enviados nos formulários deste sítio são usados apenas para responder ao pedido e para o encaminhar ao serviço competente. Não são cedidos a terceiros nem usados para outros fins.</p>
+              <p data-i18n="con.priv.a2">Pode pedir a consulta, a correcção ou o apagamento dos seus dados por email para <span class="placeholder-value">[[DPO_EMAIL]]</span>. O pedido é respondido no prazo de dez dias úteis.</p>
+            </div>
+          </div>
+          <div class="accordion__item" id="cookies">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="pol-2" id="pol-2-btn"><span data-i18n="con.cookies.q">Cookies e armazenamento local</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="pol-2" role="region" aria-labelledby="pol-2-btn" hidden>
+              <p data-i18n="con.cookies.a1">Este sítio não usa cookies de rastreamento nem publicidade. Guarda no seu navegador apenas três coisas: o idioma escolhido, a preferência de alto contraste e o histórico da conversa com a assistente.</p>
+              <p data-i18n="con.cookies.a2">Estes dados ficam no seu dispositivo e podem ser apagados a qualquer momento, limpando os dados do sítio no navegador ou usando o botão de apagar conversa na janela da assistente.</p>
+            </div>
+          </div>
+          <div class="accordion__item" id="acessibilidade">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="pol-3" id="pol-3-btn"><span data-i18n="con.aces.q">Declaração de acessibilidade</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="pol-3" role="region" aria-labelledby="pol-3-btn" hidden>
+              <p data-i18n="con.aces.a1">Este sítio foi construído para cumprir as WCAG 2.1 nível AA: contraste mínimo de 4,5:1, navegação completa por teclado, foco sempre visível, texto alternativo em todas as imagens e formulários com etiquetas associadas.</p>
+              <p data-i18n="con.aces.a2">Se encontrar uma barreira de acesso, comunique-a para <span class="placeholder-value">[[MAIN_EMAIL]]</span>. A Câmara compromete-se a responder em dez dias úteis e a indicar o prazo de correcção.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LATERAL -->
+    <aside class="stack-lg">
+      <div class="panel">
+        <h2 class="panel__title" data-i18n="con.aside.horario">Horário de atendimento</h2>
+        <div class="hours">
+          <div data-weekday="1,2,3,4,5"><span data-i18n="con.aside.d1">Segunda a sexta</span><span class="mono">8h00–15h30</span></div>
+          <div data-weekday="6"><span data-i18n="con.aside.d2">Sábado</span><span class="mono" data-i18n="con.aside.fechado">Encerrado</span></div>
+          <div data-weekday="0"><span data-i18n="con.aside.d3">Domingo</span><span class="mono" data-i18n="con.aside.fechado">Encerrado</span></div>
+        </div>
+        <p class="mt-md" style="font-size:var(--fs-sm)" data-i18n="con.aside.nota">A tesouraria encerra às 14h30. Nos feriados nacionais e no feriado municipal os serviços estão encerrados.</p>
+      </div>
+      <div class="panel panel--accent">
+        <h2 class="panel__title" data-i18n="con.aside.urg">Emergências</h2>
+        <p style="font-size:var(--fs-sm)" data-i18n="con.aside.urg.texto">Fora do horário de atendimento, para situações de risco para pessoas ou bens, contacte a Protecção Civil Municipal.</p>
+        <p class="mt-md"><a class="btn btn--accent btn--block" href="tel:[[CIVIL_PROTECTION_PHONE]]"><span class="placeholder-value">[[CIVIL_PROTECTION_PHONE]]</span></a></p>
+      </div>
+      <div class="panel">
+        <h2 class="panel__title" data-i18n="con.aside.chat">Resposta imediata</h2>
+        <p style="font-size:var(--fs-sm)" data-i18n="con.aside.chat.texto">Para dúvidas simples sobre documentos, prazos e horários, a assistente do sítio responde a qualquer hora.</p>
+        <p class="mt-md"><button type="button" class="btn btn--ghost btn--sm" data-open-chat data-i18n="con.aside.chat.cta">Abrir a Nha Câmara</button></p>
+      </div>
+    </aside>
+  </div>
+</main>

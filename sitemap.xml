@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substituir [[SITE_DOMAIN]] pelo domínio final antes de publicar. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/servicos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/servicos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/servicos.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/servicos.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/noticias.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/noticias.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/noticias.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/noticias.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/municipio.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/municipio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/municipio.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/municipio.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/governacao.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/governacao.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/governacao.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/governacao.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/transparencia.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/transparencia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/transparencia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/transparencia.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/turismo.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/turismo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/turismo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/turismo.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://[[SITE_DOMAIN]]/contactos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/contactos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/contactos.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/contactos.html"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serviços ao Munícipe — certidões, licenças, água e taxas</title>
+<meta name="description" content="Como pedir certidões, licenças comerciais, obras particulares, ligação de água, recolha de resíduos, mercados, cemitérios e consultar as taxas municipais.">
+<meta name="author" content="Câmara Municipal do Maio">
+<meta name="theme-color" content="#07272E">
+<link rel="canonical" href="https://[[SITE_DOMAIN]]/servicos.html">
+<link rel="alternate" hreflang="pt" href="https://[[SITE_DOMAIN]]/servicos.html">
+<link rel="alternate" hreflang="en" href="https://[[SITE_DOMAIN]]/servicos.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://[[SITE_DOMAIN]]/servicos.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Câmara Municipal do Maio">
+<meta property="og:locale" content="pt_CV">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:title" content="Serviços ao Munícipe — certidões, licenças, água e taxas">
+<meta property="og:description" content="Como pedir certidões, licenças comerciais, obras particulares, ligação de água, recolha de resíduos, mercados, cemitérios e consultar as taxas municipais.">
+<meta property="og:url" content="https://[[SITE_DOMAIN]]/servicos.html">
+<meta property="og:image" content="https://[[SITE_DOMAIN]]/assets/img/og-servicos.jpg">
+<meta property="og:image:alt" content="Salinas e costa da ilha do Maio, Cabo Verde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serviços ao Munícipe — certidões, licenças, água e taxas">
+<meta name="twitter:description" content="Como pedir certidões, licenças comerciais, obras particulares, ligação de água, recolha de resíduos, mercados, cemitérios e consultar as taxas municipais.">
+<meta name="twitter:image" content="https://[[SITE_DOMAIN]]/assets/img/og-servicos.jpg">
+
+<!-- Ícone: marca das salinas -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2307272E'/%3E%3Crect x='9' y='9' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='35' y='9' width='20' height='14' fill='%23E3D2AE'/%3E%3Crect x='9' y='27' width='20' height='14' fill='%23C2566B'/%3E%3Crect x='35' y='27' width='20' height='14' fill='%23FAFCFB'/%3E%3Crect x='9' y='45' width='46' height='10' fill='%230F4C5C'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+
+<!-- Tipografia -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<!-- CSS crítico: pinta o cabeçalho e o herói antes da folha completa -->
+<style>
+:root{--color-abismo:#07272E;--color-mare:#0F4C5C;--color-sal:#FAFCFB;--color-sal-2:#EDF2F0;--color-sal-3:#DDE6E3;--color-areia:#E3D2AE;--color-salmoura:#C2566B;--color-tinta:#0B1A1E;--font-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--font-body:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--font-data:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-body);color:var(--color-tinta);background:var(--color-sal);line-height:1.62;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+.topbar{background:var(--color-abismo);color:#A9C4C9;font-size:.78rem;font-family:var(--font-data)}
+.site-header{position:sticky;top:0;z-index:80;background:#fff;border-bottom:1px solid var(--color-sal-3)}
+.wrap-wide{width:min(100% - clamp(1rem,4vw,3rem)*2,1440px);margin-inline:auto}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:.75rem}
+.brand{display:inline-flex;align-items:center;gap:.75rem;text-decoration:none;color:inherit}
+.brand__mark{inline-size:46px;block-size:46px;flex:none}
+.brand__name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;line-height:1.05;letter-spacing:-.022em}
+.brand__sub{font-family:var(--font-data);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#40565C}
+.hero{background:var(--color-abismo);color:var(--color-sal)}
+.skip-link{position:absolute;left:1rem;top:-100px;z-index:200;background:var(--color-abismo);color:var(--color-sal);padding:.75rem 1.5rem;border-radius:4px}
+.skip-link:focus{top:1rem}
+[hidden]{display:none!important}
+</style>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/chatbot.css">
+
+<!-- Dados e comportamento (todos com defer, na ordem de dependência) -->
+<script src="data/inline-data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+<script src="assets/js/chatbot.js" defer></script>
+
+<!-- Dados estruturados: entidade -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "@id": "https://[[SITE_DOMAIN]]/#camara",
+  "name": "Câmara Municipal do Maio",
+  "alternateName": "Maio Municipality Council",
+  "url": "https://[[SITE_DOMAIN]]/",
+  "logo": "https://[[SITE_DOMAIN]]/assets/img/brasao.svg",
+  "email": "[[MAIN_EMAIL]]",
+  "telephone": "[[MAIN_PHONE]]",
+  "taxID": "[[TAX_ID]]",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Praça do Município",
+    "addressLocality": "Vila do Maio (Porto Inglês)",
+    "addressRegion": "Ilha do Maio",
+    "postalCode": "[[POSTAL_CODE]]",
+    "addressCountry": "CV"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Concelho do Maio",
+    "containedInPlace": { "@type": "Country", "name": "Cabo Verde" }
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00", "closes": "15:30"
+  }],
+  "sameAs": ["[[FACEBOOK_URL]]", "[[YOUTUBE_URL]]", "[[INSTAGRAM_URL]]"]
+}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://[[SITE_DOMAIN]]/"},{"@type":"ListItem","position":2,"name":"Serviços ao Munícipe","item":"https://[[SITE_DOMAIN]]/servicos.html"}]}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Que documentos preciso para pedir uma certidão de residência na Câmara Municipal do Maio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Precisa do documento de identificação válido e do comprovativo do pagamento da taxa. Se o pedido for feito por outra pessoa, é necessária procuração assinada. A certidão fica pronta em cinco dias úteis no Balcão do Munícipe." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é o horário de atendimento da Câmara Municipal do Maio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O Balcão do Munícipe atende de segunda a sexta-feira, das 8h00 às 15h30, sem interrupção. A tesouraria encerra às 14h30. Nos feriados municipais e nacionais os serviços estão encerrados." }
+    },
+    {
+      "@type": "Question",
+      "name": "Como se paga a factura da água no concelho do Maio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pague na tesouraria da Câmara até ao dia 20 de cada mês, com a factura ou o número de contrato. O pagamento fora do prazo acresce juros e, ao fim de dois meses em dívida, o fornecimento é suspenso até regularização." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quem vive no estrangeiro pode tratar de assuntos com a Câmara Municipal do Maio sem ir à ilha?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. Certidões, comprovativos e segundas vias pedem-se por email, com cópia do documento de identificação e indicação do fim a que se destinam. A Câmara responde em cinco dias úteis e envia o documento digitalizado; o original fica em arquivo para levantamento." }
+    },
+    {
+      "@type": "Question",
+      "name": "É preciso licença para uma obra pequena em casa no concelho do Maio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Obras de conservação — pintura, substituição de telhas, reparação de canalização — carecem apenas de comunicação prévia por escrito. Qualquer alteração de área, de fachada ou de estrutura exige licença de obras com projecto assinado por técnico habilitado." }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde se consulta o orçamento municipal do Maio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O orçamento, o plano de actividades e as contas de gerência estão na página de Transparência, em formato PDF e com filtro por ano. Documentos anteriores a 2015 são consultados presencialmente no arquivo municipal." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentService",
+  "name": "Emissão de certidões municipais",
+  "serviceType": "Certidão",
+  "provider": { "@type": "GovernmentOrganization", "name": "Câmara Municipal do Maio", "url": "https://[[SITE_DOMAIN]]/" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Concelho do Maio" },
+  "audience": { "@type": "Audience", "audienceType": "Munícipes do concelho do Maio e diáspora" },
+  "availableChannel": [
+    { "@type": "ServiceChannel", "name": "Balcão do Munícipe", "servicePhone": "[[MAIN_PHONE]]", "serviceLocation": { "@type": "Place", "name": "Paços do Concelho", "address": { "@type": "PostalAddress", "addressLocality": "Vila do Maio", "addressCountry": "CV" } } },
+    { "@type": "ServiceChannel", "name": "Email", "serviceUrl": "mailto:[[MAIN_EMAIL]]" }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar para o conteúdo principal</a>
+
+<!-- ============================ BARRA DE TOPO ============================ -->
+<div class="topbar">
+  <div class="wrap-wide topbar__inner">
+    <p class="topbar__facts">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+        <span data-i18n="top.hours">Seg a Sex, 8h00–15h30</span>
+      </span>
+      <span class="is-optional">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z"/></svg>
+        <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a>
+      </span>
+      <span class="is-optional">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <a href="mailto:[[MAIN_EMAIL]]"><span class="placeholder-value">[[MAIN_EMAIL]]</span></a>
+      </span>
+    </p>
+
+    <div class="topbar__tools">
+      <div class="lang-switch" role="group" aria-label="Idioma do sítio / Site language">
+        <button type="button" data-lang-btn="pt" aria-pressed="true" lang="pt" title="Português">PT</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false" lang="en" title="English">EN</button>
+      </div>
+      <button type="button" class="icon-toggle" id="contrast-toggle" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+        <span data-i18n="top.contrast">Alto contraste</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================== CABEÇALHO ============================== -->
+<header class="site-header">
+  <div class="wrap-wide header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <!-- Brasão institucional — substituir por assets/img/brasao.svg -->
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect x="2" y="2" width="60" height="60" rx="4" fill="#07272E"/>
+          <rect x="9" y="9" width="20" height="14" fill="#FAFCFB"/>
+          <rect x="35" y="9" width="20" height="14" fill="#E3D2AE"/>
+          <rect x="9" y="27" width="20" height="14" fill="#C2566B"/>
+          <rect x="35" y="27" width="20" height="14" fill="#FAFCFB"/>
+          <rect x="9" y="45" width="46" height="10" fill="#0F4C5C"/>
+          <path d="M12 50h40" stroke="#FAFCFB" stroke-width="1.5" stroke-dasharray="3 4"/>
+        </svg>
+      </span>
+      <span>
+        <span class="brand__name">Câmara Municipal<br>do Maio</span>
+        <span class="brand__sub">Cabo Verde</span>
+      </span>
+    </a>
+
+    <div class="header__actions">
+      <button type="button" class="icon-btn icon-btn--outline" id="search-open" aria-expanded="false" aria-controls="search-overlay">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+        <span data-i18n="header.search">Pesquisar</span>
+      </button>
+      <a class="btn btn--accent btn--sm" href="servicos.html" data-i18n="header.cta">Serviços ao munícipe</a>
+      <button type="button" class="icon-btn icon-btn--outline" id="menu-open" aria-expanded="false" aria-controls="offcanvas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <span data-i18n="header.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Navegação principal" data-i18n-attr="aria-label:nav.aria">
+    <div class="wrap-wide" style="position:relative">
+      <ul class="mainnav__list">
+        <li><a class="mainnav__link" href="index.html" data-i18n="nav.inicio">Início</a></li>
+        <li class="mainnav__item--has-mega">
+          <a class="mainnav__link" href="municipio.html" aria-expanded="false" aria-controls="mega-municipio" data-i18n="nav.municipio">Município
+            <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l5 5 5-5"/></svg></a>
+        </li>
+        <li><a class="mainnav__link" href="governacao.html" data-i18n="nav.governacao">Governação</a></li>
+        <li class="mainnav__item--has-mega">
+          <a class="mainnav__link" href="servicos.html" aria-current="page" aria-expanded="false" aria-controls="mega-servicos" data-i18n="nav.servicos">Serviços
+            <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l5 5 5-5"/></svg></a>
+        </li>
+        <li><a class="mainnav__link" href="noticias.html" data-i18n="nav.noticias">Notícias</a></li>
+        <li><a class="mainnav__link" href="turismo.html" data-i18n="nav.turismo">Visitar o Maio</a></li>
+        <li><a class="mainnav__link" href="transparencia.html" data-i18n="nav.transparencia">Transparência</a></li>
+        <li><a class="mainnav__link" href="contactos.html" data-i18n="nav.contactos">Contactos</a></li>
+      </ul>
+
+      <!-- Mega-menu: Município -->
+      <div class="mega" id="mega-municipio" hidden>
+        <div class="wrap-wide mega__grid">
+          <div class="mega__cols">
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.conhecer">Conhecer</h3>
+              <ul>
+                <li><a href="municipio.html#historia" data-i18n="mega.municipio.historia">História do concelho</a></li>
+                <li><a href="municipio.html#geografia" data-i18n="mega.municipio.geografia">Geografia e clima</a></li>
+                <li><a href="municipio.html#simbolos" data-i18n="mega.municipio.simbolos">Bandeira e brasão</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.territorio">Território</h3>
+              <ul>
+                <li><a href="municipio.html#localidades" data-i18n="mega.municipio.localidades">As 12 localidades</a></li>
+                <li><a href="municipio.html#numeros" data-i18n="mega.municipio.numeros">O Maio em números</a></li>
+                <li><a href="turismo.html#natureza" data-i18n="mega.municipio.natureza">Áreas protegidas</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.municipio.viver">Viver aqui</h3>
+              <ul>
+                <li><a href="servicos.html#agua" data-i18n="mega.municipio.agua">Água e saneamento</a></li>
+                <li><a href="servicos.html#residuos" data-i18n="mega.municipio.residuos">Recolha de resíduos</a></li>
+                <li><a href="servicos.html#mercados" data-i18n="mega.municipio.mercados">Mercados e feiras</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega__promo">
+            <h3 data-i18n="mega.municipio.promo.titulo">Nasceu no Maio e vive fora?</h3>
+            <p data-i18n="mega.municipio.promo.texto">A diáspora pode pedir certidões e comprovativos sem vir à ilha. O pedido é feito por email e a resposta segue em cinco dias úteis.</p>
+            <a class="btn btn--primary btn--sm" href="servicos.html#certidoes" data-i18n="mega.municipio.promo.cta">Pedir certidão à distância</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mega-menu: Serviços -->
+      <div class="mega" id="mega-servicos" hidden>
+        <div class="wrap-wide mega__grid">
+          <div class="mega__cols">
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.documentos">Documentos</h3>
+              <ul>
+                <li><a href="servicos.html#certidoes" data-i18n="mega.servicos.certidoes">Certidões e declarações</a></li>
+                <li><a href="servicos.html#licenciamento" data-i18n="mega.servicos.licenciamento">Licenciamento comercial</a></li>
+                <li><a href="servicos.html#urbanismo" data-i18n="mega.servicos.urbanismo">Obras e urbanismo</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.quotidiano">No dia a dia</h3>
+              <ul>
+                <li><a href="servicos.html#agua" data-i18n="mega.servicos.agua">Água e saneamento</a></li>
+                <li><a href="servicos.html#residuos" data-i18n="mega.servicos.residuos">Resíduos e limpeza</a></li>
+                <li><a href="servicos.html#cemiterios" data-i18n="mega.servicos.cemiterios">Cemitérios</a></li>
+              </ul>
+            </div>
+            <div class="mega__col">
+              <h3 data-i18n="mega.servicos.tratar">Tratar agora</h3>
+              <ul>
+                <li><a href="index.html#ocorrencia" data-i18n="mega.servicos.ocorrencia">Comunicar uma ocorrência</a></li>
+                <li><a href="servicos.html#taxas" data-i18n="mega.servicos.taxas">Consultar taxas</a></li>
+                <li><a href="contactos.html#marcacao" data-i18n="mega.servicos.marcacao">Marcar atendimento</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega__promo">
+            <h3 data-i18n="mega.servicos.promo.titulo">Não sabe por onde começar?</h3>
+            <p data-i18n="mega.servicos.promo.texto">A Nha Câmara, a assistente do sítio, diz-lhe que documentos levar e quanto tempo demora cada pedido.</p>
+            <button type="button" class="btn btn--primary btn--sm" data-open-chat data-i18n="mega.servicos.promo.cta">Perguntar à Nha Câmara</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============================== OFF-CANVAS ============================= -->
+<div class="offcanvas" id="offcanvas" hidden>
+  <div class="offcanvas__scrim"></div>
+  <div class="offcanvas__panel" role="dialog" aria-modal="true" aria-label="Menu de navegação" data-i18n-attr="aria-label:nav.menuAria">
+    <div class="offcanvas__head">
+      <span class="offcanvas__title" data-i18n="nav.menuTitle">Navegação</span>
+      <button type="button" class="icon-btn" id="menu-close" data-i18n-attr="aria-label:nav.close" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Navegação em dispositivo móvel" data-i18n-attr="aria-label:nav.mobileAria">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+        <li><a href="municipio.html" data-i18n="nav.municipio">Município</a></li>
+        <li><a href="governacao.html" data-i18n="nav.governacao">Governação</a></li>
+        <li><a href="servicos.html" aria-current="page" data-i18n="nav.servicos.long">Serviços ao munícipe</a></li>
+        <li><a href="noticias.html" data-i18n="nav.noticias.long">Notícias e eventos</a></li>
+        <li><a href="turismo.html" data-i18n="nav.turismo">Visitar o Maio</a></li>
+        <li><a href="transparencia.html" data-i18n="nav.transparencia">Transparência</a></li>
+        <li><a href="contactos.html" data-i18n="nav.contactos">Contactos</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="btn btn--ghost btn--block" data-open-search data-i18n="header.search">Pesquisar</button>
+    <a class="btn btn--accent btn--block" href="index.html#ocorrencia" data-i18n="nav.ocorrencia">Comunicar uma ocorrência</a>
+    <p class="offcanvas__foot">
+      <span data-i18n="footer.addressShort">Praça do Município, Vila do Maio, Ilha do Maio, Cabo Verde</span><br>
+      <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a>
+    </p>
+  </div>
+</div>
+
+<!-- =========================== PESQUISA (overlay) ======================== -->
+<div class="search-overlay" id="search-overlay" hidden>
+  <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-label="Pesquisar no sítio" data-i18n-attr="aria-label:search.aria">
+    <div class="wrap">
+      <div class="search-field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+        <label class="visually-hidden" for="search-input" data-i18n="search.label">O que procura?</label>
+        <input type="search" id="search-input" placeholder="O que procura?" data-i18n-attr="placeholder:search.label" autocomplete="off" spellcheck="false">
+        <button type="button" class="icon-btn" id="search-close" data-i18n-attr="aria-label:search.close" aria-label="Fechar pesquisa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <p class="visually-hidden" id="search-count" role="status" aria-live="polite"></p>
+      <ul class="search-results" id="search-results"></ul>
+      <p class="search-hint" data-i18n-html="search.hint"><kbd>&darr;</kbd> e <kbd>&uarr;</kbd> para navegar · <kbd>Enter</kbd> para abrir · <kbd>Esc</kbd> para fechar</p>
+    </div>
+  </div>
+</div>
+<nav class="breadcrumbs" aria-label="Migalhas de pão" data-i18n-attr="aria-label:crumb.aria">
+  <div class="wrap-wide">
+    <ol>
+      <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+      <li><span aria-current="page" data-i18n="serv.crumb">Serviços ao Munícipe</span></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="pagehead">
+    <div class="wrap-wide">
+      <p class="eyebrow" data-i18n="serv.eyebrow">Balcão do Munícipe</p>
+      <h1 data-i18n="serv.title">O que precisa de tratar</h1>
+      <p data-i18n="serv.lede">Cada serviço nesta página diz três coisas antes de tudo: que documentos levar, quanto tempo demora e onde se faz. Se faltar alguma informação, pergunte à Nha Câmara ou telefone para o Balcão.</p>
+    </div>
+    <div class="pagehead__deco" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><g stroke="#E3D2AE" stroke-width="1.5" fill="none"><rect x="12" y="14" width="84" height="52"/><rect x="106" y="14" width="82" height="52"/><rect x="12" y="76" width="60" height="46"/><rect x="82" y="76" width="106" height="46"/><rect x="12" y="132" width="176" height="50"/></g></svg>
+    </div>
+  </header>
+
+  <div class="wrap-wide section grid grid--sidebar">
+    <div class="stack-lg">
+
+      <!-- CERTIDÕES -->
+      <section id="certidoes" aria-labelledby="h-cert">
+        <p class="eyebrow" data-i18n="serv.cert.eyebrow">Documentos</p>
+        <h2 id="h-cert" data-i18n="serv.cert.title">Certidões e declarações</h2>
+        <p class="lede" data-i18n="serv.cert.resposta">Para pedir uma certidão, leve o documento de identificação e o comprovativo do pagamento da taxa ao Balcão do Munícipe; a certidão fica pronta em cinco dias úteis.</p>
+        <div class="article-body">
+          <p data-i18n="serv.cert.p1">A Câmara emite certidões de residência, de propriedade municipal, de actividade económica, de confrontações e de teor de deliberações. Quem vive fora da ilha pode pedir por email, anexando cópia do documento de identificação; a certidão segue digitalizada e o original fica disponível para levantamento.</p>
+          <h3 data-i18n="serv.cert.h3a">O que levar</h3>
+          <ul>
+            <li data-i18n="serv.cert.l1">Documento de identificação válido do requerente.</li>
+            <li data-i18n="serv.cert.l2">Procuração, quando o pedido é feito por terceiro.</li>
+            <li data-i18n="serv.cert.l3">Indicação exacta do fim a que se destina a certidão.</li>
+            <li data-i18n="serv.cert.l4">Comprovativo do pagamento da taxa aplicável.</li>
+          </ul>
+          <h3 data-i18n="serv.cert.h3b">Prazos</h3>
+          <ul>
+            <li data-i18n="serv.cert.p2">Certidão simples: <strong>5 dias úteis</strong>.</li>
+            <li data-i18n="serv.cert.p3">Certidão com pesquisa de arquivo: <strong>10 dias úteis</strong>.</li>
+            <li data-i18n="serv.cert.p4">Pedido urgente: sujeito a taxa agravada, previsto na tabela municipal.</li>
+          </ul>
+        </div>
+        <div class="cluster mt-md">
+          <a class="btn btn--accent" href="contactos.html#formulario" data-i18n="serv.cert.cta1">Pedir certidão por email</a>
+          <a class="btn btn--ghost" href="#taxas" data-i18n="serv.cert.cta2">Ver taxa aplicável</a>
+        </div>
+      </section>
+
+      <!-- LICENCIAMENTO -->
+      <section id="licenciamento" aria-labelledby="h-lic">
+        <p class="eyebrow" data-i18n="serv.lic.eyebrow">Actividade económica</p>
+        <h2 id="h-lic" data-i18n="serv.lic.title">Licenciamento comercial</h2>
+        <p class="lede" data-i18n="serv.lic.resposta">Para abrir um estabelecimento no concelho, entregue o pedido de licença comercial no Balcão do Munícipe antes de iniciar a actividade; a decisão é comunicada em quinze dias úteis.</p>
+        <div class="article-body">
+          <p data-i18n="serv.lic.p1">A licença municipal cobre estabelecimentos de comércio, restauração, bebidas e alojamento local, bem como esplanadas, publicidade exterior e ocupação de via pública. Estabelecimentos de restauração carecem ainda de parecer da delegação de saúde.</p>
+          <h3 data-i18n="serv.lic.h3">Documentos do pedido</h3>
+          <ul>
+            <li data-i18n="serv.lic.l1">Requerimento em impresso próprio, assinado pelo titular.</li>
+            <li data-i18n="serv.lic.l2">Documento de identificação e número de identificação fiscal.</li>
+            <li data-i18n="serv.lic.l3">Planta do espaço com áreas e acessos.</li>
+            <li data-i18n="serv.lic.l4">Título de propriedade ou contrato de arrendamento.</li>
+            <li data-i18n="serv.lic.l5">Parecer sanitário, nos casos de restauração e bebidas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- URBANISMO -->
+      <section id="urbanismo" aria-labelledby="h-urb">
+        <p class="eyebrow" data-i18n="serv.urb.eyebrow">Obras</p>
+        <h2 id="h-urb" data-i18n="serv.urb.title">Obras particulares e urbanismo</h2>
+        <p class="lede" data-i18n="serv.urb.resposta">Construir, ampliar ou alterar a fachada de um edifício no concelho exige licença de obras pedida antes do início dos trabalhos; obras de conservação simples carecem apenas de comunicação prévia.</p>
+        <div class="article-body">
+          <p data-i18n="serv.urb.p1">O processo entra na Divisão de Urbanismo, que verifica a conformidade com o plano director municipal, emite o alinhamento e marca a vistoria. Iniciar obra sem licença sujeita o dono da obra a embargo e a coima.</p>
+          <h3 data-i18n="serv.urb.h3">Etapas do processo</h3>
+          <ol>
+            <li data-i18n="serv.urb.e1">Pedido de informação prévia, quando há dúvidas sobre a viabilidade do terreno.</li>
+            <li data-i18n="serv.urb.e2">Entrega do projecto de arquitectura assinado por técnico habilitado.</li>
+            <li data-i18n="serv.urb.e3">Apreciação e parecer dos serviços, no prazo de trinta dias úteis.</li>
+            <li data-i18n="serv.urb.e4">Emissão do alvará, após pagamento das taxas.</li>
+            <li data-i18n="serv.urb.e5">Vistoria final e licença de utilização.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ÁGUA -->
+      <section id="agua" aria-labelledby="h-agua">
+        <p class="eyebrow" data-i18n="serv.agua.eyebrow">Serviços urbanos</p>
+        <h2 id="h-agua" data-i18n="serv.agua.title">Água e saneamento</h2>
+        <p class="lede" data-i18n="serv.agua.resposta">A factura da água paga-se na tesouraria da Câmara, na Vila do Maio, até ao dia 20 de cada mês; o pagamento fora do prazo tem juros e pode levar à suspensão do fornecimento.</p>
+        <div class="article-body">
+          <p data-i18n="serv.agua.p1">Os Serviços Municipais de Água asseguram o abastecimento a partir da unidade de dessalinização e das captações do concelho. A leitura dos contadores é mensal e a facturação segue o escalão de consumo aprovado pela Assembleia Municipal.</p>
+          <h3 data-i18n="serv.agua.h3a">Nova ligação</h3>
+          <ul>
+            <li data-i18n="serv.agua.l1">Requerimento com identificação do titular e morada do imóvel.</li>
+            <li data-i18n="serv.agua.l2">Documento de propriedade ou autorização do proprietário.</li>
+            <li data-i18n="serv.agua.l3">Pagamento da taxa de ligação e do depósito de garantia.</li>
+            <li data-i18n="serv.agua.l4">Execução do ramal no prazo de dez dias úteis após pagamento.</li>
+          </ul>
+          <h3 data-i18n="serv.agua.h3b">Avaria ou rutura</h3>
+          <p data-i18n="serv.agua.p2">Comunique de imediato pelo telefone do Balcão. Fora do horário, use o número de emergência afixado nos Paços do Concelho. Ruturas na via pública têm prioridade sobre qualquer outro pedido.</p>
+        </div>
+        <div class="cluster mt-md">
+          <a class="btn btn--accent" href="index.html#ocorrencia" data-i18n="serv.agua.cta">Comunicar avaria na rede</a>
+        </div>
+      </section>
+
+      <!-- RESÍDUOS -->
+      <section id="residuos" aria-labelledby="h-res">
+        <p class="eyebrow" data-i18n="serv.res.eyebrow">Ambiente</p>
+        <h2 id="h-res" data-i18n="serv.res.title">Resíduos e limpeza urbana</h2>
+        <p class="lede" data-i18n="serv.res.resposta">O lixo doméstico é recolhido ao fim da tarde, nos dias indicados para cada localidade; deposite os sacos fechados no contentor mais próximo depois das 18h00.</p>
+        <div class="table-wrap mt-md">
+          <table class="data">
+            <caption data-i18n="serv.res.caption">Calendário de recolha por localidade</caption>
+            <thead><tr><th scope="col" data-i18n="serv.res.th1">Localidade</th><th scope="col" data-i18n="serv.res.th2">Dias de recolha</th><th scope="col" data-i18n="serv.res.th3">Período</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Localidade">Vila do Maio</td><td data-label="Dias" data-i18n="serv.res.d1">Segunda a sábado</td><td data-label="Período" class="num">18:00 – 22:00</td></tr>
+              <tr><td data-label="Localidade">Morro</td><td data-label="Dias" data-i18n="serv.res.d2">Segunda, quarta e sexta</td><td data-label="Período" class="num">17:00 – 20:00</td></tr>
+              <tr><td data-label="Localidade">Calheta</td><td data-label="Dias" data-i18n="serv.res.d3">Terça, quinta e sábado</td><td data-label="Período" class="num">17:00 – 20:00</td></tr>
+              <tr><td data-label="Localidade">Morrinho · Pedro Vaz</td><td data-label="Dias" data-i18n="serv.res.d4">Terça e sexta</td><td data-label="Período" class="num">16:00 – 19:00</td></tr>
+              <tr><td data-label="Localidade">Barreiro · Figueira da Horta</td><td data-label="Dias" data-i18n="serv.res.d5">Quarta e sábado</td><td data-label="Período" class="num">16:00 – 19:00</td></tr>
+              <tr><td data-label="Localidade">Restantes localidades</td><td data-label="Dias" data-i18n="serv.res.d6">Quinta-feira</td><td data-label="Período" class="num">15:00 – 19:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hint mt-md text-soft" style="font-size:var(--fs-xs)" data-i18n="serv.res.nota">Entulho de obra, mobiliário e electrodomésticos não são recolhidos com o lixo doméstico. Marque a remoção no Balcão do Munícipe.</p>
+      </section>
+
+      <!-- MERCADOS -->
+      <section id="mercados" aria-labelledby="h-merc">
+        <p class="eyebrow" data-i18n="serv.merc.eyebrow">Economia local</p>
+        <h2 id="h-merc" data-i18n="serv.merc.title">Mercados e feiras</h2>
+        <p class="lede" data-i18n="serv.merc.resposta">Para vender no mercado municipal é preciso um cartão de vendedor emitido pela Câmara, com renovação anual em Janeiro.</p>
+        <div class="article-body">
+          <p data-i18n="serv.merc.p1">O Mercado Municipal da Vila do Maio abre de segunda a sábado, das 6h00 às 14h00. A feira do Morro realiza-se no terceiro domingo de cada mês e a da Calheta no primeiro sábado. A ocupação de lugares é atribuída por sorteio anual, com prioridade a produtores do concelho.</p>
+        </div>
+      </section>
+
+      <!-- CEMITÉRIOS -->
+      <section id="cemiterios" aria-labelledby="h-cem">
+        <p class="eyebrow" data-i18n="serv.cem.eyebrow">Serviços fúnebres</p>
+        <h2 id="h-cem" data-i18n="serv.cem.title">Cemitérios municipais</h2>
+        <p class="lede" data-i18n="serv.cem.resposta">A inumação é autorizada no Balcão do Munícipe mediante apresentação do certificado de óbito, em qualquer dia útil e, em caso de urgência, também ao fim-de-semana.</p>
+        <div class="article-body">
+          <p data-i18n="serv.cem.p1">O concelho tem cemitérios na Vila do Maio, no Morro e na Calheta. Os pedidos de concessão de sepultura perpétua, de trasladação e de exumação são apresentados por escrito e decididos no prazo de dez dias úteis.</p>
+        </div>
+      </section>
+
+      <!-- TAXAS -->
+      <section id="taxas" aria-labelledby="h-tax">
+        <p class="eyebrow" data-i18n="serv.tax.eyebrow">Tabela municipal</p>
+        <h2 id="h-tax" data-i18n="serv.tax.title">Taxas e licenças</h2>
+        <p class="lede" data-i18n="serv.tax.resposta">Os valores em vigor constam do Regulamento de Taxas e Licenças aprovado pela Assembleia Municipal; consulte o documento antes de fazer o pagamento.</p>
+        <div class="table-wrap mt-md">
+          <table class="data">
+            <caption data-i18n="serv.tax.caption">Taxas mais pedidas — valores por confirmar nos serviços</caption>
+            <thead><tr><th scope="col" data-i18n="serv.tax.th1">Serviço</th><th scope="col" data-i18n="serv.tax.th2">Valor (CVE)</th><th scope="col" data-i18n="serv.tax.th3">Prazo</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s1">Certidão simples</td><td data-label="Valor" class="num placeholder-value">[[FEE_CERTIDAO]]</td><td data-label="Prazo" class="num">5 d. úteis</td></tr>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s2">Certidão com pesquisa de arquivo</td><td data-label="Valor" class="num placeholder-value">[[FEE_CERTIDAO_ARQUIVO]]</td><td data-label="Prazo" class="num">10 d. úteis</td></tr>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s3">Licença de obras (por m²)</td><td data-label="Valor" class="num placeholder-value">[[FEE_OBRAS_M2]]</td><td data-label="Prazo" class="num">30 d. úteis</td></tr>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s4">Licença comercial anual</td><td data-label="Valor" class="num placeholder-value">[[FEE_LICENCA_COMERCIAL]]</td><td data-label="Prazo" class="num">15 d. úteis</td></tr>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s5">Ligação de água domiciliária</td><td data-label="Valor" class="num placeholder-value">[[FEE_LIGACAO_AGUA]]</td><td data-label="Prazo" class="num">10 d. úteis</td></tr>
+              <tr><td data-label="Serviço" data-i18n="serv.tax.s6">Cartão de vendedor de mercado</td><td data-label="Valor" class="num placeholder-value">[[FEE_CARTAO_VENDEDOR]]</td><td data-label="Prazo" class="num">3 d. úteis</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cluster mt-md">
+          <a class="btn btn--primary" href="transparencia.html#documentos" data-i18n="serv.tax.cta">Descarregar o regulamento de taxas</a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" aria-labelledby="h-faq">
+        <p class="eyebrow" data-i18n="serv.faq.eyebrow">Perguntas frequentes</p>
+        <h2 id="h-faq" data-i18n="serv.faq.title">As dúvidas que chegam ao balcão</h2>
+        <div class="accordion mt-md">
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn"><span data-i18n="serv.faq.q1">Que documentos preciso para pedir uma certidão de residência?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a1">Precisa do documento de identificação válido e do comprovativo do pagamento da taxa. Se o pedido for feito por outra pessoa, é necessária procuração assinada. A certidão fica pronta em cinco dias úteis no Balcão do Munícipe.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn"><span data-i18n="serv.faq.q2">Qual é o horário de atendimento da Câmara Municipal do Maio?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a2">O Balcão do Munícipe atende de segunda a sexta-feira, das 8h00 às 15h30, sem interrupção. A tesouraria encerra às 14h30. Nos feriados municipais e nacionais os serviços estão encerrados.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn"><span data-i18n="serv.faq.q3">Como pago a factura da água?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a3">Pague na tesouraria da Câmara até ao dia 20 de cada mês, com a factura ou o número de contrato. O pagamento fora do prazo acresce juros e, ao fim de dois meses em dívida, o fornecimento é suspenso até regularização.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn"><span data-i18n="serv.faq.q4">Vivo no estrangeiro. Posso tratar de assuntos sem ir à ilha?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a4">Sim. Certidões, comprovativos e segundas vias pedem-se por email, com cópia do documento de identificação e indicação do fim a que se destinam. A Câmara responde em cinco dias úteis e envia o documento digitalizado; o original fica em arquivo para levantamento por si ou por procurador.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn"><span data-i18n="serv.faq.q5">Preciso de licença para uma obra pequena em casa?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a5">Obras de conservação — pintura, substituição de telhas, reparação de canalização — carecem apenas de comunicação prévia por escrito. Qualquer alteração de área, de fachada ou de estrutura exige licença de obras com projecto assinado por técnico habilitado.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <h3><button class="accordion__btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn"><span data-i18n="serv.faq.q6">Onde posso ver o orçamento municipal?</span><span class="accordion__sign" aria-hidden="true"></span></button></h3>
+            <div class="accordion__panel" id="faq-6" role="region" aria-labelledby="faq-6-btn" hidden>
+              <p class="accordion__answer" data-i18n="serv.faq.a6">O orçamento, o plano de actividades e as contas de gerência estão na página de Transparência, em formato PDF e com filtro por ano. Documentos anteriores a 2015 são consultados presencialmente no arquivo municipal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LATERAL -->
+    <aside class="stack-lg">
+      <nav class="panel toc" aria-labelledby="toc-serv">
+        <h2 class="panel__title" id="toc-serv" data-i18n="serv.toc">Serviços</h2>
+        <ul>
+          <li><a href="#certidoes" data-i18n="serv.toc.cert">Certidões e declarações</a></li>
+          <li><a href="#licenciamento" data-i18n="serv.toc.lic">Licenciamento comercial</a></li>
+          <li><a href="#urbanismo" data-i18n="serv.toc.urb">Obras e urbanismo</a></li>
+          <li><a href="#agua" data-i18n="serv.toc.agua">Água e saneamento</a></li>
+          <li><a href="#residuos" data-i18n="serv.toc.res">Resíduos e limpeza</a></li>
+          <li><a href="#mercados" data-i18n="serv.toc.merc">Mercados e feiras</a></li>
+          <li><a href="#cemiterios" data-i18n="serv.toc.cem">Cemitérios</a></li>
+          <li><a href="#taxas" data-i18n="serv.toc.tax">Taxas e licenças</a></li>
+          <li><a href="#faq" data-i18n="serv.toc.faq">Perguntas frequentes</a></li>
+        </ul>
+      </nav>
+      <div class="panel panel--accent">
+        <h2 class="panel__title" data-i18n="serv.aside.title">Não encontra o seu caso?</h2>
+        <p style="font-size:var(--fs-sm)" data-i18n="serv.aside.texto">A Nha Câmara responde a perguntas sobre documentos, prazos e horários. Se o assunto exigir decisão, encaminha para o funcionário certo.</p>
+        <p class="mt-md"><button type="button" class="btn btn--accent btn--sm" data-open-chat="Que documentos preciso para uma certidão?" data-open-chat-en="What documents do I need for a certificate?" data-i18n="serv.aside.cta">Perguntar à Nha Câmara</button></p>
+      </div>
+      <div class="panel">
+        <h2 class="panel__title" data-i18n="serv.aside2.title">Atendimento presencial</h2>
+        <div class="hours">
+          <div data-weekday="1,2,3,4,5"><span data-i18n="serv.hours.d1">Segunda a sexta</span><span class="mono">8h00–15h30</span></div>
+          <div data-weekday="6"><span data-i18n="serv.hours.d2">Sábado</span><span class="mono" data-i18n="serv.hours.fechado">Encerrado</span></div>
+          <div data-weekday="0"><span data-i18n="serv.hours.d3">Domingo</span><span class="mono" data-i18n="serv.hours.fechado">Encerrado</span></div>
+        </div>
+        <p class="mt-md" style="font-size:var(--fs-sm)"><a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a></p>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <div class="footer__salt" aria-hidden="true"></div>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="2" y="2" width="60" height="60" rx="4" fill="#0F4C5C"/>
+              <rect x="9" y="9" width="20" height="14" fill="#FAFCFB"/>
+              <rect x="35" y="9" width="20" height="14" fill="#E3D2AE"/>
+              <rect x="9" y="27" width="20" height="14" fill="#C2566B"/>
+              <rect x="35" y="27" width="20" height="14" fill="#FAFCFB"/>
+              <rect x="9" y="45" width="46" height="10" fill="#07272E"/>
+              <path d="M12 50h40" stroke="#FAFCFB" stroke-width="1.5" stroke-dasharray="3 4"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand__name">Câmara Municipal<br>do Maio</span>
+            <span class="brand__sub">Cabo Verde</span>
+          </span>
+        </a>
+        <div class="footer__contact mt-md">
+          <p data-i18n-html="footer.address">Praça do Município, Vila do Maio<br>Ilha do Maio, Cabo Verde</p>
+          <p><strong data-i18n="footer.phoneLabel">Telefone:</strong> <a href="tel:[[MAIN_PHONE]]"><span class="placeholder-value">[[MAIN_PHONE]]</span></a></p>
+          <p><strong data-i18n="footer.emailLabel">Email:</strong> <a href="mailto:[[MAIN_EMAIL]]"><span class="placeholder-value">[[MAIN_EMAIL]]</span></a></p>
+          <p><strong data-i18n="footer.nifLabel">NIF:</strong> <span class="placeholder-value">[[TAX_ID]]</span></p>
+        </div>
+        <div class="socials">
+          <a href="[[FACEBOOK_URL]]" aria-label="Facebook da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.5-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2V10H7.5v3h2.8v8z"/></svg>
+          </a>
+          <a href="[[YOUTUBE_URL]]" aria-label="Canal de YouTube da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5A2.5 2.5 0 0 0 2.4 7.3C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12zM10 15V9l5 3z"/></svg>
+          </a>
+          <a href="[[INSTAGRAM_URL]]" aria-label="Instagram da Câmara Municipal do Maio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Mapa do sítio — serviços" data-i18n-attr="aria-label:footer.aria.servicos">
+        <h2 data-i18n="footer.col.servicos">Serviços</h2>
+        <ul>
+          <li><a href="servicos.html#certidoes" data-i18n="footer.link.certidoes">Certidões e declarações</a></li>
+          <li><a href="servicos.html#licenciamento" data-i18n="footer.link.licenciamento">Licenciamento comercial</a></li>
+          <li><a href="servicos.html#urbanismo" data-i18n="footer.link.urbanismo">Obras e urbanismo</a></li>
+          <li><a href="servicos.html#agua" data-i18n="footer.link.agua">Água e saneamento</a></li>
+          <li><a href="servicos.html#taxas" data-i18n="footer.link.taxas">Tabela de taxas</a></li>
+          <li><a href="index.html#ocorrencia" data-i18n="footer.link.ocorrencia">Comunicar ocorrência</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Mapa do sítio — município" data-i18n-attr="aria-label:footer.aria.municipio">
+        <h2 data-i18n="footer.col.municipio">Município</h2>
+        <ul>
+          <li><a href="municipio.html" data-i18n="footer.link.municipio">O concelho do Maio</a></li>
+          <li><a href="governacao.html" data-i18n="footer.link.governacao">Governação municipal</a></li>
+          <li><a href="transparencia.html" data-i18n="footer.link.transparencia">Transparência</a></li>
+          <li><a href="noticias.html" data-i18n="footer.link.noticias">Notícias e eventos</a></li>
+          <li><a href="turismo.html" data-i18n="footer.link.turismo">Visitar o Maio</a></li>
+          <li><a href="contactos.html" data-i18n="footer.link.contactos">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 data-i18n="footer.col.links">Ligações úteis</h2>
+        <ul>
+          <li><a href="https://www.governo.cv" rel="noopener" data-i18n="footer.link.governo">Governo de Cabo Verde</a></li>
+          <li><a href="https://www.portondinosilha.cv" rel="noopener" data-i18n="footer.link.porton">Porton di nos Ilha</a></li>
+          <li><a href="https://www.ine.cv" rel="noopener" data-i18n="footer.link.ine">Instituto Nacional de Estatística</a></li>
+          <li><a href="https://www.anmcv.cv" rel="noopener" data-i18n="footer.link.anmcv">Assoc. Nacional de Municípios</a></li>
+          <li><a href="https://www.tribunalcontas.cv" rel="noopener" data-i18n="footer.link.tc">Tribunal de Contas</a></li>
+        </ul>
+
+        <h2 class="mt-md" data-i18n="footer.col.newsletter">Boletim municipal</h2>
+        <form class="newsletter" id="form-newsletter">
+          <p style="font-size:var(--fs-xs)" data-i18n="footer.newsletter.texto">Um email por mês com deliberações, obras e eventos. Cancela quando quiser.</p>
+          <div class="newsletter__row">
+            <div class="field">
+              <label class="visually-hidden" for="nl-email" data-i18n="footer.newsletter.label">O seu email</label>
+              <input type="email" id="nl-email" name="email" required placeholder="nome@exemplo.cv" autocomplete="email">
+            </div>
+            <button type="submit" class="btn btn--accent" data-i18n="footer.newsletter.cta">Subscrever boletim</button>
+          </div>
+          <p class="form__status" hidden></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> <span data-i18n="footer.copy">Câmara Municipal do Maio. Todos os direitos reservados.</span></p>
+      <ul>
+        <li><a href="contactos.html#privacidade" data-i18n="footer.link.privacidade">Política de privacidade</a></li>
+        <li><a href="contactos.html#cookies" data-i18n="footer.link.cookies">Política de cookies</a></li>
+        <li><a href="contactos.html#acessibilidade" data-i18n="footer.link.acessibilidade">Declaração de acessibilidade</a></li>
+        <li><a href="sitemap.xml" data-i18n="footer.link.sitemap">Mapa do sítio</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

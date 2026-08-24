@@ -1,0 +1,47 @@
+<nav class="breadcrumbs" aria-label="Migalhas de pão" data-i18n-attr="aria-label:crumb.aria">
+  <div class="wrap-wide">
+    <ol>
+      <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+      <li><a href="noticias.html" data-i18n="nav.noticias">Notícias</a></li>
+      <li><span aria-current="page" id="crumb-current" data-i18n="noti.crumb">Artigo</span></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="wrap-wide section grid grid--sidebar">
+    <article class="stack-lg" id="article-host">
+      <!-- Preenchido por main.js a partir de data/noticias.json (?id=…) -->
+      <h1 data-i18n="noti.loading">A carregar o artigo…</h1>
+    </article>
+
+    <aside class="stack-lg">
+      <div class="panel">
+        <h2 class="panel__title" data-i18n="noti.aside.title">Serviço de comunicação</h2>
+        <p style="font-size:var(--fs-sm)" data-i18n="noti.aside.texto">Pedidos de imprensa, entrevistas e material fotográfico: contacte o gabinete de comunicação da Câmara Municipal do Maio.</p>
+        <p class="mt-md" style="font-size:var(--fs-sm)"><a href="mailto:[[PRESS_EMAIL]]"><span class="placeholder-value">[[PRESS_EMAIL]]</span></a></p>
+      </div>
+      <div class="panel panel--accent">
+        <h2 class="panel__title" data-i18n="noti.aside2.title">Receber por email</h2>
+        <p style="font-size:var(--fs-sm)" data-i18n="noti.aside2.texto">O boletim municipal reúne, uma vez por mês, deliberações, obras e eventos.</p>
+        <p class="mt-md"><a class="btn btn--accent btn--sm" href="#form-newsletter" data-i18n="noti.aside2.cta">Subscrever boletim</a></p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="section section--alt" aria-labelledby="rel-title">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="noti.rel.eyebrow">Continuar a ler</p>
+          <h2 id="rel-title" data-i18n="noti.rel.title">Outras notícias</h2>
+        </div>
+        <div class="section-head__aside">
+          <a class="link-arrow" href="noticias.html" data-i18n="noti.rel.cta">Todas as notícias
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="grid grid--2" id="article-related"></div>
+    </div>
+  </section>
+</main>

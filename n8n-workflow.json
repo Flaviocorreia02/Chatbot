@@ -1,0 +1,497 @@
+{
+  "name": "Nha Câmara — assistente da Câmara Municipal do Maio",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "camara-maio-chat",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Webhook (POST)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -660,
+        0
+      ],
+      "webhookId": "camara-maio-chat"
+    },
+    {
+      "parameters": {
+        "httpMethod": "OPTIONS",
+        "path": "camara-maio-chat",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Webhook (OPTIONS preflight)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -660,
+        320
+      ],
+      "webhookId": "camara-maio-chat-preflight"
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 204,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "https://[[SITE_DOMAIN]]"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              },
+              {
+                "name": "Access-Control-Max-Age",
+                "value": "86400"
+              }
+            ]
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "Responder 204 (preflight)",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -320,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Normaliza o payload do sítio e valida a mensagem.\nconst body = $input.first().json.body ?? $input.first().json;\n\nconst sessionId = String(body.sessionId ?? '').trim();\nconst message   = String(body.message ?? '').trim().slice(0, 1000);\nconst lang      = ['pt', 'en', 'kea'].includes(body.lang) ? body.lang : 'pt';\nconst page      = String(body.page ?? '/').slice(0, 200);\nconst timestamp = body.timestamp ?? new Date().toISOString();\n\nif (!message) {\n  return [{ json: { valido: false, motivo: 'mensagem_vazia', lang } }];\n}\nif (!sessionId) {\n  return [{ json: { valido: false, motivo: 'sessao_em_falta', lang } }];\n}\n\n// Detecção simples de pedido de atendimento humano (PT / EN / Kriolu)\nconst humano = /\\[PEDIDO DE ATENDIMENTO HUMANO\\]|(falar|fala|conversar|contactar).{0,25}(funcion|pessoa|human|atendente|algu[eé]m|algen|t[ée]cnic|respons[áa]vel)|atendimento (humano|presencial)|(talk|speak|chat)\\s+(to|with)\\s+(a\\s+|an\\s+|the\\s+)?(member of staff|staff|someone|somebody|human|person|agent|operator|real person|employee)|(human|live)\\s+(agent|support|assistance|help|operator|being)|customer (service|support)|(papia|papi[áa]|fal[áa])\\s+ku\\s+(un\\s+)?(algen|pessoa|funcionari)/i.test(message);\n\n// O widget do sítio recolhe nome, email, telefone e assunto num formulário e\n// envia-os etiquetados, um por linha. Ler por rótulo é determinístico — sem\n// isto o email chegava ao Balcão com «não indicado» em todos os campos.\nconst linha = (rotulo) => (message.match(new RegExp('^' + rotulo + ':[ \\\\t]*(.+)$', 'm')) || [])[1]?.trim() || '';\nconst dados = {\n  nome:     linha('Nome'),\n  email:    linha('Email'),\n  telefone: linha('Telefone'),\n  assunto:  linha('Assunto')\n};\ndados.completo = Boolean(dados.nome && dados.email && dados.telefone && dados.assunto);\n\nreturn [{ json: { valido: true, sessionId, message, lang, page, timestamp, humano, dados } }];"
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "Normalizar e validar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -420,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.valido }}",
+                    "rightValue": "={{ false }}",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "invalido"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.humano }}",
+                    "rightValue": "={{ true }}",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "atendimento_humano"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "assistente"
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "name": "Encaminhar intenção",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -180,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message }}",
+        "options": {
+          "systemMessage": "You are «Nha Câmara», the official assistant of Câmara Municipal do Maio (island of Maio, Cabo Verde).\nÉs a «Nha Câmara», assistente oficial da Câmara Municipal do Maio (ilha do Maio, Cabo Verde).\n\nALWAYS ANSWER IN PLAIN TEXT, NEVER IN JSON.\nRESPONDE SEMPRE EM TEXTO CORRIDO, NUNCA EM JSON.\n\n=== LANGUAGE / IDIOMA — RULE ABOVE ALL OTHERS ===\nThe site language for this visitor is: {{ $json.lang || 'pt' }}\n\n1. If the visitor's message is written in English, answer 100% in English.\n2. If it is written in Portuguese, answer 100% in European Portuguese.\n3. If it is written in kriolu of Cabo Verde, answer in kriolu.\n4. If the message is too short or ambiguous to tell (e.g. \"ok\", \"hours?\", a single word),\n   use the site language above.\n5. If the visitor switches language mid-conversation, switch with them immediately —\n   never keep the previous language just because the earlier turns used it.\n6. Never mix languages in one answer, and never repeat the answer twice in two languages.\n   This prompt is bilingual for your reference only; your reply is in ONE language.\n\nEsta regra é a mais importante de todas: o idioma da resposta segue o idioma da pergunta.\nNunca respondas em português a uma pergunta feita em inglês.\n\n=== SOURCE / FONTE ===\nUse only the knowledge base provided (regulations, fee table and municipal FAQ), queried through\nthe base_conhecimento_municipal tool. Its documents are in Portuguese: when the visitor writes in\nEnglish, translate the content into English in your answer — never quote the Portuguese back.\nDo not use general knowledge about other municipalities.\nUsa apenas a base de conhecimento fornecida. Os documentos estão em português: quando a pergunta\nfor em inglês, traduz o conteúdo na resposta.\n\n=== NEVER INVENT / NUNCA INVENTES ===\nDo not state fee amounts, legal deadlines, regulation articles, names of elected officials or\nphone numbers that were not given to you. If you do not know, say so plainly and point the person\nto the front desk.\nNão indiques valores de taxas, prazos legais, artigos de regulamentos, nomes de eleitos nem\nnúmeros de telefone que não te tenham sido dados. Se não souberes, di-lo de forma directa e\nencaminha para o atendimento presencial.\n\nFront desk / Atendimento:\n- EN: Citizen Desk (Balcão do Munícipe), Paços do Concelho, Vila do Maio. Monday to Friday,\n  08:00–15:30. Phone [[MAIN_PHONE]].\n- PT: Balcão do Munícipe, Paços do Concelho, Vila do Maio. Segunda a sexta, 8h00–15h30.\n  Telefone [[MAIN_PHONE]].\n\n=== WHAT YOU KNOW / O QUE SABES ===\nOpening hours / Horário de atendimento\n- EN: Monday to Friday, 08:00–15:30, no lunch break. The treasury (Tesouraria) closes at 14:30.\n- PT: Segunda a sexta, 8h00–15h30, sem interrupção. A Tesouraria encerra às 14h30.\n\nCertificates / Certidões\n- EN: Bring an identification document and proof of payment of the fee to the Citizen Desk.\n  Ready in five working days. People living off the island may request one by email.\n- PT: Levar documento de identificação e comprovativo do pagamento da taxa ao Balcão do Munícipe.\n  Prontas em cinco dias úteis. Quem vive fora da ilha pode pedir por email.\n\nWater / Água\n- EN: The bill is paid at the treasury by the 20th of each month. Report faults by phone to the\n  Citizen Desk.\n- PT: A factura paga-se na tesouraria até ao dia 20 de cada mês. As avarias comunicam-se pelo\n  telefone do Balcão.\n\nBuilding works / Obras\n- EN: Building, extending or altering a façade requires a licence applied for before work starts.\n  Simple maintenance only requires prior notice.\n- PT: Construir, ampliar ou alterar fachada exige licença pedida antes do início dos trabalhos.\n  A conservação simples só precisa de comunicação prévia.\n\nWaste / Resíduos\n- EN: Collection in the late afternoon, on the days set for each locality.\n- PT: Recolha ao fim da tarde, nos dias indicados para cada localidade.\n\nBudget and accounts / Orçamento e contas\n- EN: On the Transparency page of the site (transparencia.html).\n- PT: Na página de Transparência do sítio (transparencia.html).\n\n=== TONE / TOM ===\nInstitutional but human. Short sentences. Active voice. The direct answer first, the detail after.\n120 words maximum, unless a list of documents is asked for.\nInstitucional mas humano. Frases curtas. Voz activa. Primeiro a resposta directa, depois o detalhe.\nNo máximo 120 palavras, salvo quando pedem uma lista de documentos.\n\n=== FORMAT / FORMATO ===\nSimple Markdown: bold for the essentials, lists for documents and steps, relative links to the\nsite pages (servicos.html, transparencia.html, contactos.html). Link text follows the reply\nlanguage (\"Services\" / \"Serviços\"), the file name never changes.\n\n=== HUMAN HANDOVER / ATENDIMENTO HUMANO ===\nThe site collects the contact details in a form before anything is sent, so the four items\n(name, email, phone, short description) normally arrive already filled in.\nO sítio recolhe os dados num formulário antes de enviar seja o que for, por isso os quatro\nelementos (nome, email, telefone, breve descrição) chegam-te normalmente já preenchidos.\n\nA) The message starts with \"[PEDIDO DE ATENDIMENTO HUMANO]\" / A mensagem começa por\n   \"[PEDIDO DE ATENDIMENTO HUMANO]\":\n   EN: The details are complete. Do NOT ask for them again and do not repeat the whole block.\n       Confirm the request has been registered, say the Citizen Desk will reply to the email or\n       phone given, and state the opening hours and the desk phone number. Two or three sentences.\n   PT: Os dados estão completos. NÃO os voltes a pedir nem repitas o bloco inteiro. Confirma que\n       o pedido ficou registado, diz que o Balcão do Munícipe responde para o email ou telefone\n       indicados, e indica o horário e o telefone do atendimento. Duas ou três frases.\n\nB) The person asks for a member of staff without that block / A pessoa pede um funcionário sem\n   esse bloco:\n   EN: Ask for the four items — full name, email, phone and a short description of the request —\n       in one short message, and say they are needed for the Citizen Desk to reply. Do not confirm\n       any handover until all four have been given.\n   PT: Pede os quatro elementos — nome completo, email, telefone e breve descrição do assunto —\n       numa só mensagem curta, dizendo que são precisos para o Balcão do Munícipe poder responder.\n       Não confirmes o encaminhamento enquanto os quatro não estiverem indicados.\n\nNEVER ask for identification numbers, bank details or health data.\nNUNCA peças números de identificação, dados bancários ou dados de saúde."
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000006",
+      "name": "AI Agent — Nha Câmara",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        140,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000007",
+      "name": "Modelo de chat",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        40,
+        220
+      ],
+      "notes": "Escolher o modelo e ligar as credenciais aqui."
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('Normalizar e validar').item.json.sessionId }}",
+        "contextWindowLength": 12
+      },
+      "id": "a1000000-0000-4000-8000-000000000008",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        180,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "name": "base_conhecimento_municipal",
+        "description": "Regulamentos, tabela de taxas, horários e perguntas frequentes da Câmara Municipal do Maio. Consultar sempre antes de responder.",
+        "topK": 4
+      },
+      "id": "a1000000-0000-4000-8000-000000000009",
+      "name": "Vector Store (opcional)",
+      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
+      "typeVersion": 1,
+      "position": [
+        340,
+        220
+      ],
+      "notes": "Opcional: ligar a um vector store com os PDF do município. Sem ele, o agente responde só com o system prompt."
+    },
+    {
+      "parameters": {
+        "fromEmail": "[[SENDER_EMAIL]]",
+        "sendTo": "[[DESK_EMAIL]]",
+        "subject": "=Pedido de atendimento humano — {{ $json.dados.nome || 'sem nome' }} (sessão {{ $json.sessionId }})",
+        "emailFormat": "text",
+        "message": "=Um munícipe pediu para falar com um funcionário através do assistente do sítio.\n{{ $json.dados.completo ? 'Os dados abaixo foram recolhidos no formulário do assistente antes do envio.' : 'ATENÇÃO: o pedido chegou sem passar pelo formulário — os dados podem estar incompletos.' }}\n\nNome: {{ $json.dados.nome || 'não indicado' }}\nEmail: {{ $json.dados.email || 'não indicado' }}\nTelefone: {{ $json.dados.telefone || 'não indicado' }}\nAssunto: {{ $json.dados.assunto || 'não indicado' }}\n\nIdioma: {{ $json.lang === 'en' ? 'Inglês — responder em inglês' : 'Português' }}\nPágina: {{ $json.page }}\nSessão: {{ $json.sessionId }}\nData: {{ $json.timestamp }}\n\n--- Mensagem original ---\n{{ $json.message }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000010",
+      "name": "Avisar o Balcão do Munícipe",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        140,
+        -220
+      ],
+      "notes": "Substituível por um nó de WhatsApp, Telegram ou Slack."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "r1",
+              "name": "reply",
+              "value": "={{ $json.lang === 'en' ? 'Your request has been passed to the Citizen Desk. Someone will call you back during opening hours: Monday to Friday, 08:00 to 15:30. If it is urgent, call [[MAIN_PHONE]].' : 'O seu pedido foi encaminhado para o Balcão do Munícipe. Entrarão em contacto durante o horário de atendimento: segunda a sexta, das 8h00 às 15h30. Se for urgente, ligue [[MAIN_PHONE]].' }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000011",
+      "name": "Resposta de encaminhamento",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        380,
+        -220
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "r2",
+              "name": "reply",
+              "value": "={{ $json.lang === 'en' ? 'I did not receive a question. Write what you need and I will help.' : 'Não recebi nenhuma pergunta. Escreva o que precisa e eu ajudo.' }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000012",
+      "name": "Resposta de pedido inválido",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        140,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "r3",
+              "name": "reply",
+              "value": "={{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000013",
+      "name": "Formatar resposta do agente",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        380,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ reply: $json.reply }) }}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "https://[[SITE_DOMAIN]]"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "POST, OPTIONS"
+              },
+              {
+                "name": "Content-Type",
+                "value": "application/json; charset=utf-8"
+              }
+            ]
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000014",
+      "name": "Responder ao sítio",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        640,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook (POST)": {
+      "main": [
+        [
+          {
+            "node": "Normalizar e validar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook (OPTIONS preflight)": {
+      "main": [
+        [
+          {
+            "node": "Responder 204 (preflight)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalizar e validar": {
+      "main": [
+        [
+          {
+            "node": "Encaminhar intenção",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Encaminhar intenção": {
+      "main": [
+        [
+          {
+            "node": "Resposta de pedido inválido",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Avisar o Balcão do Munícipe",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent — Nha Câmara",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Avisar o Balcão do Munícipe": {
+      "main": [
+        [
+          {
+            "node": "Resposta de encaminhamento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resposta de encaminhamento": {
+      "main": [
+        [
+          {
+            "node": "Responder ao sítio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Resposta de pedido inválido": {
+      "main": [
+        [
+          {
+            "node": "Responder ao sítio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent — Nha Câmara": {
+      "main": [
+        [
+          {
+            "node": "Formatar resposta do agente",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatar resposta do agente": {
+      "main": [
+        [
+          {
+            "node": "Responder ao sítio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Modelo de chat": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent — Nha Câmara",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent — Nha Câmara",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vector Store (opcional)": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent — Nha Câmara",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "camara-municipal-do-maio"
+  },
+  "tags": [
+    {
+      "name": "camara-maio"
+    }
+  ]
+}

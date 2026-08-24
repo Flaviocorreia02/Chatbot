@@ -1,0 +1,53 @@
+<nav class="breadcrumbs" aria-label="Migalhas de pão" data-i18n-attr="aria-label:crumb.aria">
+  <div class="wrap-wide">
+    <ol>
+      <li><a href="index.html" data-i18n="nav.inicio">Início</a></li>
+      <li><span aria-current="page" data-i18n="not.crumb">Notícias e Eventos</span></li>
+    </ol>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="pagehead">
+    <div class="wrap-wide">
+      <p class="eyebrow" data-i18n="not.eyebrow">Serviço de comunicação</p>
+      <h1 data-i18n="not.title">Notícias e eventos</h1>
+      <p data-i18n="not.lede">Deliberações do executivo, obras em curso, avisos aos munícipes e a agenda cultural do concelho.</p>
+    </div>
+    <div class="pagehead__deco" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><g stroke="#E3D2AE" stroke-width="1.5" fill="none"><rect x="14" y="18" width="170" height="40"/><rect x="14" y="68" width="80" height="52"/><rect x="104" y="68" width="80" height="52"/><rect x="14" y="130" width="170" height="46"/></g></svg>
+    </div>
+  </header>
+
+  <div class="wrap-wide section">
+    <section aria-labelledby="filtros-title">
+      <h2 class="visually-hidden" id="filtros-title" data-i18n="not.filtros">Filtrar notícias</h2>
+      <div class="filters mb-md">
+        <div class="field" style="min-width:min(100%,280px)">
+          <label for="news-search" data-i18n="not.pesquisar">Pesquisar nas notícias</label>
+          <input type="search" id="news-search" data-i18n-attr="placeholder:not.pesquisar.ph" placeholder="Ex.: água, escola, feira" autocomplete="off">
+        </div>
+        <div id="news-filters" class="cluster" role="group" aria-label="Categorias" data-i18n-attr="aria-label:not.categorias">
+          <button type="button" class="chip" data-categoria="todas" aria-pressed="true" data-i18n="not.cat.todas">Todas</button>
+          <button type="button" class="chip" data-categoria="municipio" aria-pressed="false" data-i18n="not.cat.municipio">Município</button>
+          <button type="button" class="chip" data-categoria="obras" aria-pressed="false" data-i18n="not.cat.obras">Obras</button>
+          <button type="button" class="chip" data-categoria="ambiente" aria-pressed="false" data-i18n="not.cat.ambiente">Ambiente</button>
+          <button type="button" class="chip" data-categoria="cultura" aria-pressed="false" data-i18n="not.cat.cultura">Cultura</button>
+        </div>
+      </div>
+      <p class="visually-hidden" id="news-status" role="status" aria-live="polite"></p>
+      <div class="grid grid--3" id="news-list"></div>
+      <nav class="pagination" id="news-pagination" aria-label="Paginação das notícias" data-i18n-attr="aria-label:not.paginacao"></nav>
+    </section>
+
+    <section class="section" aria-labelledby="agenda-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-i18n="not.agenda.eyebrow">Agenda</p>
+          <h2 id="agenda-title" data-i18n="not.agenda.title">Próximos eventos</h2>
+        </div>
+      </div>
+      <div class="calendar" id="calendar"></div>
+    </section>
+  </div>
+</main>
